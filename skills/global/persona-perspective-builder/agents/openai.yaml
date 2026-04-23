@@ -1,0 +1,4 @@
+interface:
+  display_name: "Persona Perspective Builder"
+  short_description: "Build perspective, persona, or hybrid person skills"
+  default_prompt: "Use $persona-perspective-builder to distill mixed evidence about a person into a perspective, persona, or hybrid skill."

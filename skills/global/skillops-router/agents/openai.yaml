@@ -1,0 +1,4 @@
+interface:
+  display_name: "SkillOps Router"
+  short_description: "技能运维总入口，负责搜索、抽取、安装、创建、插件脚手架与使用复盘分流"
+  default_prompt: "使用 $skillops-router 判断这件事该搜现有 skill、把来源材料蒸馏成 skill candidate、扩现有 skill、写新 skill，还是只在确有必要时做 plugin 脚手架。"

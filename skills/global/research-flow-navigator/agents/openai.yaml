@@ -1,0 +1,5 @@
+interface:
+  display_name: "研究流程导航器"
+  short_description: "用于研究全链路分流、阶段路由与下一步行动决策的全局技能"
+  brand_color: "#344054"
+  default_prompt: "使用 $research-flow-navigator 看看我当前该先读、先想、先跑还是先写。"

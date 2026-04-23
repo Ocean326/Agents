@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Finder"
+  short_description: "Local-first web discovery router"
+  default_prompt: "Use $web-finder to discover relevant current sources across GitHub, blogs, forums, news, and social platforms, then synthesize an evidence-backed brief."

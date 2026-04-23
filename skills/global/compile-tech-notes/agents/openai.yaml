@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compile Briefs & Notes"
+  short_description: "把零碎材料整理成汇报、纪要、brief 与可复用技术笔记"
+  default_prompt: "Use $compile-tech-notes to turn my scattered materials into the right task report, meeting memo, feasibility brief, material digest, or systematic technical note."

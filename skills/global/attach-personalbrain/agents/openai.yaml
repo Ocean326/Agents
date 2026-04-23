@@ -1,0 +1,4 @@
+interface:
+  display_name: "Attach PersonalBrain"
+  short_description: "Attach PersonalBrain for project-aware retrieval"
+  default_prompt: "Use $attach-personalbrain to attach this task to my PersonalBrain root, auto-detect it from the current workspace when possible, and keep any external repo integration thin, project-aware, and writeback-safe."

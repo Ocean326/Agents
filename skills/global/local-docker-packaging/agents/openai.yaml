@@ -1,0 +1,4 @@
+interface:
+  display_name: "Local Docker Packaging"
+  short_description: "Build, export, and troubleshoot local Docker packages"
+  default_prompt: "Package the current repository with Docker, auto-discover build inputs, and export artifacts with verification"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Page Capture"
+  short_description: "Capture pages into JSON, Markdown, and handoff."
+  default_prompt: "Use $web-page-capture to capture this page into JSON, Markdown, handoff, and downloaded images."

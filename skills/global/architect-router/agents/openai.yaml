@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architect Router"
+  short_description: "架构总入口，负责在 architect 与各专门架构 lane 之间分流"
+  default_prompt: "使用 $architect-router 判断这个任务该走 architect 总控，还是直接进入治理、代码库架构、DDD、agent systems 等专门 lane。"

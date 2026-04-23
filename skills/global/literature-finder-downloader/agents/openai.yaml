@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Finder"
+  short_description: "End-to-end paper search, download, and local library building"
+  default_prompt: "Use $literature-finder-downloader to find papers, download what is accessible, and build a local literature library from my exported references."

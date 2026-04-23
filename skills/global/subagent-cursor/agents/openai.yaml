@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subagent Cursor"
+  short_description: "Route local Cursor subagent calls and models."
+  default_prompt: "Use $subagent-cursor to choose a local Cursor model and run a bounded external subagent task."

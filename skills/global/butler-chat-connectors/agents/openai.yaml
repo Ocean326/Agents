@@ -1,0 +1,4 @@
+interface:
+  display_name: "Butler Chat Connectors"
+  short_description: "Sync Butler chat connectors locally."
+  default_prompt: "Use this skill to sync, validate, and operate Butler-style Feishu and Weixin connectors locally, or switch to the official Lark CLI and MCP routes when broader Feishu access is needed."

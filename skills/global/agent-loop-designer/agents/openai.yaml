@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Loop Designer"
+  short_description: "Design loops, prompt contracts, and prompt tuning gates"
+  default_prompt: "Use $agent-loop-designer to design the smallest reliable agent workflow, including prompt contracts, prompt-refinement gates, state, and stop rules."

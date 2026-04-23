@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delivery Conductor"
+  short_description: "End-to-end delivery orchestration"
+  default_prompt: "Use $delivery-conductor to take this task from idea to verified delivery."

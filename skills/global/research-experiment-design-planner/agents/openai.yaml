@@ -1,0 +1,5 @@
+interface:
+  display_name: "实验设计规划器"
+  short_description: "用于 AI 实验设计、基线选择与消融矩阵规划的全局技能"
+  brand_color: "#0E9384"
+  default_prompt: "使用 $research-experiment-design-planner 设计最小但有说服力的实验计划。"

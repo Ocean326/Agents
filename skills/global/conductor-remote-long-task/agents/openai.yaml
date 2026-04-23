@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conductor Remote SSH Compute"
+  short_description: "Run recoverable SSH compute on Lenovo or 179"
+  default_prompt: "Use $conductor-remote-long-task to run this task remotely over SSH on Lenovo or the 179 server, choose the best reachable route, and close it through the local Conductor receipt."

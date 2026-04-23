@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ocean Buddy"
+  short_description: "Exacting operating lens with evidence, judgment, and low-entropy taste"
+  default_prompt: "Use $ocean-buddy to frame this task with exact scope, fixed phase order, evidence-first local delivery, and stronger judgment about what should stay narrow or become durable."

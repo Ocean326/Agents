@@ -1,0 +1,5 @@
+interface:
+  display_name: "论文生产流水线"
+  short_description: "用于 AI 论文起草、重写、定位与 rebuttal 的全局技能"
+  brand_color: "#C4320A"
+  default_prompt: "使用 $research-paper-production-pipeline 把这些结果整理成一版清晰论文框架。"

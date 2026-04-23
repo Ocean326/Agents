@@ -1,0 +1,4 @@
+interface:
+  display_name: "Execution Router"
+  short_description: "执行编排总入口，负责本地、远程长任务、并行代理与子代理执行分流"
+  default_prompt: "使用 $execution-router 判断这个任务该留在当前线程本地做，还是发到 Lenovo，或者在显式授权下拆成并行/子代理执行。"

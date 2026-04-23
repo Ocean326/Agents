@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Usage Close Loop"
+  short_description: "Log skill-use retrospectives in background"
+  default_prompt: "Use $skill-skill-usage-close-loop to record the skills we just used without blocking the main task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proposal Critique Refine"
+  short_description: "Iteratively challenge and improve a proposal"
+  default_prompt: "Use $proposal-critique-refine to critique, improve, and re-check this proposal for 3 rounds. Stay neutral by default, or bias toward innovation, simplicity, speed, safety, or cost if I ask."

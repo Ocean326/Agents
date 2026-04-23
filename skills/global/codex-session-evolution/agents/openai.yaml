@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Evolution"
+  short_description: "Review Codex history and extract improvements"
+  default_prompt: "Use $codex-session-evolution to review archived Codex sessions, distill recurring workflow or skill issues, and propose bounded improvements without exposing raw logs."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proposal Synthesis"
+  short_description: "Generate multiple proposal briefs before critique."
+  default_prompt: "Use $proposal-synthesis to turn this vague goal into 3 candidate proposal briefs before critique."

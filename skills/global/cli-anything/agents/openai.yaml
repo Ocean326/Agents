@@ -1,0 +1,4 @@
+interface:
+  display_name: "CLI Anything"
+  short_description: "Build local CLIs and operator surfaces"
+  default_prompt: "Use $cli-anything to build or refine a robust local CLI or lightweight operator surface for this workflow."

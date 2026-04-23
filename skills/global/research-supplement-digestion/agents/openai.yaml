@@ -1,0 +1,5 @@
+interface:
+  display_name: "补充材料消化"
+  short_description: "用于 AI 论文 appendix、补充实验与复现细节提取的全局技能"
+  brand_color: "#155EEF"
+  default_prompt: "使用 $research-supplement-digestion 提取这份 appendix 里的复现关键细节。"

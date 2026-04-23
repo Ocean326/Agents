@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thinking Lenses"
+  short_description: "Route tasks into compact prompt upgrades"
+  default_prompt: "Use $thinking-lenses to rewrite this request into a compact prompt with the right reasoning lens, constraints, and output contract."

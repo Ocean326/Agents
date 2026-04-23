@@ -1,0 +1,5 @@
+interface:
+  display_name: "训练与消融循环"
+  short_description: "用于 runs 解读、ablation 分析与下一轮实验排序的全局技能"
+  brand_color: "#0E9384"
+  default_prompt: "使用 $research-training-and-ablation-loop 解读这些 runs，并给出下一步实验建议。"

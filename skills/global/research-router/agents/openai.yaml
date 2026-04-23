@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Router"
+  short_description: "研究总入口，负责在查、读、想、跑、写、讲之间分流"
+  default_prompt: "使用 $research-router 判断我当前这项研究最该先查文献建库、先读、先想、先设计实验、先分析结果，还是先写。"

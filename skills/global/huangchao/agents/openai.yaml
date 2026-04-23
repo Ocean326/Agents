@@ -1,0 +1,4 @@
+interface:
+  display_name: "Huang Chao Perspective"
+  short_description: "Agent-native product lens with workflow leverage, systems taste, and open-source ambition"
+  default_prompt: "Use $huangchao to critique this agent or product idea through an HKUDS-style lens focused on real workflow leverage, agent-native interfaces, compact system design, and open-source product growth."

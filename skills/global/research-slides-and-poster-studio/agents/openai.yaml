@@ -1,0 +1,5 @@
+interface:
+  display_name: "幻灯片与海报工作室"
+  short_description: "用于汇报、slides、poster 与研究讲述整理的全局技能"
+  brand_color: "#C4320A"
+  default_prompt: "使用 $research-slides-and-poster-studio 把这些研究笔记整理成一套清晰汇报。"

@@ -1,0 +1,6757 @@
+{
+  "$schema": "./skill-index.schema.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-04-20",
+  "sources": [
+    {
+      "id": "anthropics-skills",
+      "name": "Anthropic Skills (Official)",
+      "owner": "anthropics",
+      "url": "https://github.com/anthropics/skills",
+      "type": "official",
+      "description": "Anthropic 公式の Claude Skills リポジトリ"
+    },
+    {
+      "id": "github-awesome-copilot",
+      "name": "GitHub Awesome Copilot (Official)",
+      "owner": "github",
+      "url": "https://github.com/github/awesome-copilot",
+      "type": "official",
+      "description": "GitHub 公式の Copilot リソース集"
+    },
+    {
+      "id": "obra-superpowers",
+      "name": "Superpowers",
+      "owner": "obra",
+      "url": "https://github.com/obra/superpowers",
+      "type": "community",
+      "description": "高品質なスキル・エージェント・コマンド集"
+    },
+    {
+      "id": "composio-awesome",
+      "name": "Awesome Claude Skills (ComposioHQ)",
+      "owner": "ComposioHQ",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "type": "awesome-list",
+      "description": "Claude Skills のキュレーションリスト"
+    },
+    {
+      "id": "claude-scientific-skills",
+      "name": "Claude Scientific Skills",
+      "owner": "K-Dense-AI",
+      "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+      "type": "community",
+      "description": "科学研究向けスキル集（論文、ポスター、スライド作成）"
+    },
+    {
+      "id": "playwright-skill",
+      "name": "Playwright Skill",
+      "owner": "lackeyjb",
+      "url": "https://github.com/lackeyjb/playwright-skill",
+      "type": "community",
+      "description": "Playwright によるブラウザ自動化・テスト実行"
+    },
+    {
+      "id": "aktsmm-agent-skills",
+      "name": "Agent Skills (aktsmm)",
+      "owner": "aktsmm",
+      "url": "https://github.com/aktsmm/Agent-Skills",
+      "type": "community",
+      "description": "Azure・開発系スキル by yamapan"
+    },
+    {
+      "id": "openshift-ai-helpers",
+      "name": "OpenShift AI Helpers",
+      "owner": "openshift-eng",
+      "url": "https://github.com/openshift-eng/ai-helpers",
+      "type": "community",
+      "description": "HyperShift クラスタ作成スキル (AWS/Azure/KubeVirt/OpenStack/PowerVS)"
+    },
+    {
+      "id": "claude-codex-settings",
+      "name": "Claude Codex Settings",
+      "owner": "fcakyon",
+      "url": "https://github.com/fcakyon/claude-codex-settings",
+      "type": "community",
+      "description": "Azure/GCloud/Slack/MongoDB 等の各種ツール設定スキル"
+    },
+    {
+      "id": "claude-command-control",
+      "name": "Claude Command & Control",
+      "owner": "enuno",
+      "url": "https://github.com/enuno/claude-command-and-control",
+      "type": "community",
+      "description": "並列エージェント実行・通信・ワークフロー管理スキル集"
+    },
+    {
+      "id": "claude-plugins-plus",
+      "name": "Claude Code Plugins Plus Skills",
+      "owner": "jeremylongshore",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+      "type": "community",
+      "description": "AI SDK v5 マルチエージェントシステム構築スキル"
+    },
+    {
+      "id": "claude-code-harness",
+      "name": "Claude Code Harness",
+      "owner": "Chachamaru127",
+      "url": "https://github.com/Chachamaru127/claude-code-harness",
+      "type": "community",
+      "description": "自律的 Plan→Work→Review サイクルで高品質開発を実現"
+    },
+    {
+      "id": "personal-ai-infra",
+      "name": "Personal AI Infrastructure",
+      "owner": "danielmiessler",
+      "url": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+      "type": "community",
+      "description": "AI インフラ・オブザーバビリティスキル by danielmiessler"
+    }
+  ],
+  "skills": [
+    {
+      "name": "algorithmic-art",
+      "source": "anthropics-skills",
+      "path": "skills/algorithmic-art",
+      "categories": [
+        "creative",
+        "art"
+      ],
+      "description": "アルゴリズミックアートの生成"
+    },
+    {
+      "name": "brand-guidelines",
+      "source": "anthropics-skills",
+      "path": "skills/brand-guidelines",
+      "categories": [
+        "design",
+        "branding"
+      ],
+      "description": "ブランドガイドラインの作成・管理"
+    },
+    {
+      "name": "canvas-design",
+      "source": "anthropics-skills",
+      "path": "skills/canvas-design",
+      "categories": [
+        "design",
+        "creative"
+      ],
+      "description": "キャンバスデザインの作成"
+    },
+    {
+      "name": "doc-coauthoring",
+      "source": "anthropics-skills",
+      "path": "skills/doc-coauthoring",
+      "categories": [
+        "document",
+        "collaboration"
+      ],
+      "description": "ドキュメントの共同執筆"
+    },
+    {
+      "name": "docx",
+      "source": "anthropics-skills",
+      "path": "skills/docx",
+      "categories": [
+        "document",
+        "office"
+      ],
+      "description": "Word ドキュメント (.docx) の処理"
+    },
+    {
+      "name": "pdf",
+      "source": "anthropics-skills",
+      "path": "skills/pdf",
+      "categories": [
+        "document"
+      ],
+      "description": "PDF ファイルの処理"
+    },
+    {
+      "name": "pptx",
+      "source": "anthropics-skills",
+      "path": "skills/pptx",
+      "categories": [
+        "document",
+        "office",
+        "presentation"
+      ],
+      "description": "PowerPoint (.pptx) の処理"
+    },
+    {
+      "name": "xlsx",
+      "source": "anthropics-skills",
+      "path": "skills/xlsx",
+      "categories": [
+        "document",
+        "office",
+        "data"
+      ],
+      "description": "Excel (.xlsx) の処理"
+    },
+    {
+      "name": "frontend-design",
+      "source": "anthropics-skills",
+      "path": "skills/frontend-design",
+      "categories": [
+        "web",
+        "design",
+        "frontend"
+      ],
+      "description": "フロントエンドデザインの作成"
+    },
+    {
+      "name": "web-artifacts-builder",
+      "source": "anthropics-skills",
+      "path": "skills/web-artifacts-builder",
+      "categories": [
+        "web",
+        "frontend"
+      ],
+      "description": "Web アーティファクトのビルド"
+    },
+    {
+      "name": "webapp-testing",
+      "source": "anthropics-skills",
+      "path": "skills/webapp-testing",
+      "categories": [
+        "web",
+        "testing"
+      ],
+      "description": "Web アプリケーションのテスト"
+    },
+    {
+      "name": "mcp-builder",
+      "source": "anthropics-skills",
+      "path": "skills/mcp-builder",
+      "categories": [
+        "mcp",
+        "development"
+      ],
+      "description": "MCP サーバーの構築"
+    },
+    {
+      "name": "skill-creator",
+      "source": "anthropics-skills",
+      "path": "skills/skill-creator",
+      "categories": [
+        "meta",
+        "development"
+      ],
+      "description": "新しいスキルの作成ガイド"
+    },
+    {
+      "name": "slack-gif-creator",
+      "source": "anthropics-skills",
+      "path": "skills/slack-gif-creator",
+      "categories": [
+        "creative",
+        "communication"
+      ],
+      "description": "Slack 用 GIF の作成"
+    },
+    {
+      "name": "theme-factory",
+      "source": "anthropics-skills",
+      "path": "skills/theme-factory",
+      "categories": [
+        "design",
+        "theming"
+      ],
+      "description": "テーマの作成"
+    },
+    {
+      "name": "internal-comms",
+      "source": "anthropics-skills",
+      "path": "skills/internal-comms",
+      "categories": [
+        "communication",
+        "business"
+      ],
+      "description": "社内コミュニケーション"
+    },
+    {
+      "name": "brainstorming",
+      "source": "obra-superpowers",
+      "path": "skills/brainstorming",
+      "categories": [
+        "planning",
+        "ideation"
+      ],
+      "description": "ブレインストーミングの実施"
+    },
+    {
+      "name": "writing-plans",
+      "source": "obra-superpowers",
+      "path": "skills/writing-plans",
+      "categories": [
+        "planning",
+        "documentation"
+      ],
+      "description": "計画書の作成"
+    },
+    {
+      "name": "executing-plans",
+      "source": "obra-superpowers",
+      "path": "skills/executing-plans",
+      "categories": [
+        "planning",
+        "execution"
+      ],
+      "description": "計画の実行"
+    },
+    {
+      "name": "test-driven-development",
+      "source": "obra-superpowers",
+      "path": "skills/test-driven-development",
+      "categories": [
+        "development",
+        "testing",
+        "tdd"
+      ],
+      "description": "テスト駆動開発 (TDD)"
+    },
+    {
+      "name": "systematic-debugging",
+      "source": "obra-superpowers",
+      "path": "skills/systematic-debugging",
+      "categories": [
+        "development",
+        "debugging"
+      ],
+      "description": "体系的なデバッグ手法"
+    },
+    {
+      "name": "subagent-driven-development",
+      "source": "obra-superpowers",
+      "path": "skills/subagent-driven-development",
+      "categories": [
+        "development",
+        "agents"
+      ],
+      "description": "サブエージェント駆動開発"
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "source": "obra-superpowers",
+      "path": "skills/dispatching-parallel-agents",
+      "categories": [
+        "development",
+        "agents",
+        "parallel"
+      ],
+      "description": "並列エージェントのディスパッチ"
+    },
+    {
+      "name": "using-git-worktrees",
+      "source": "obra-superpowers",
+      "path": "skills/using-git-worktrees",
+      "categories": [
+        "git",
+        "development"
+      ],
+      "description": "Git worktree の活用"
+    },
+    {
+      "name": "receiving-code-review",
+      "source": "obra-superpowers",
+      "path": "skills/receiving-code-review",
+      "categories": [
+        "git",
+        "code-review"
+      ],
+      "description": "コードレビューの受け取り方"
+    },
+    {
+      "name": "requesting-code-review",
+      "source": "obra-superpowers",
+      "path": "skills/requesting-code-review",
+      "categories": [
+        "git",
+        "code-review"
+      ],
+      "description": "コードレビューのリクエスト"
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "source": "obra-superpowers",
+      "path": "skills/finishing-a-development-branch",
+      "categories": [
+        "git",
+        "development"
+      ],
+      "description": "開発ブランチの完了処理"
+    },
+    {
+      "name": "verification-before-completion",
+      "source": "obra-superpowers",
+      "path": "skills/verification-before-completion",
+      "categories": [
+        "quality",
+        "verification"
+      ],
+      "description": "完了前の検証"
+    },
+    {
+      "name": "writing-skills",
+      "source": "obra-superpowers",
+      "path": "skills/writing-skills",
+      "categories": [
+        "meta",
+        "development"
+      ],
+      "description": "スキルの書き方"
+    },
+    {
+      "name": "using-superpowers",
+      "source": "obra-superpowers",
+      "path": "skills/using-superpowers",
+      "categories": [
+        "meta"
+      ],
+      "description": "Superpowers の使い方"
+    },
+    {
+      "name": "artifacts-builder",
+      "source": "composio-awesome",
+      "path": "artifacts-builder",
+      "categories": [
+        "web",
+        "frontend"
+      ],
+      "description": "アーティファクトビルダー"
+    },
+    {
+      "name": "changelog-generator",
+      "source": "composio-awesome",
+      "path": "changelog-generator",
+      "categories": [
+        "documentation",
+        "git"
+      ],
+      "description": "CHANGELOG の自動生成"
+    },
+    {
+      "name": "content-research-writer",
+      "source": "composio-awesome",
+      "path": "content-research-writer",
+      "categories": [
+        "writing",
+        "research"
+      ],
+      "description": "コンテンツリサーチ・ライティング"
+    },
+    {
+      "name": "developer-growth-analysis",
+      "source": "composio-awesome",
+      "path": "developer-growth-analysis",
+      "categories": [
+        "analytics",
+        "development"
+      ],
+      "description": "開発者成長分析"
+    },
+    {
+      "name": "document-skills",
+      "source": "composio-awesome",
+      "path": "document-skills",
+      "categories": [
+        "document"
+      ],
+      "description": "ドキュメント処理スキル"
+    },
+    {
+      "name": "domain-name-brainstormer",
+      "source": "composio-awesome",
+      "path": "domain-name-brainstormer",
+      "categories": [
+        "ideation",
+        "business"
+      ],
+      "description": "ドメイン名のブレインストーミング"
+    },
+    {
+      "name": "file-organizer",
+      "source": "composio-awesome",
+      "path": "file-organizer",
+      "categories": [
+        "utility",
+        "organization"
+      ],
+      "description": "ファイル整理"
+    },
+    {
+      "name": "image-enhancer",
+      "source": "composio-awesome",
+      "path": "image-enhancer",
+      "categories": [
+        "image",
+        "creative"
+      ],
+      "description": "画像の強化・編集"
+    },
+    {
+      "name": "invoice-organizer",
+      "source": "composio-awesome",
+      "path": "invoice-organizer",
+      "categories": [
+        "business",
+        "finance"
+      ],
+      "description": "請求書の整理"
+    },
+    {
+      "name": "lead-research-assistant",
+      "source": "composio-awesome",
+      "path": "lead-research-assistant",
+      "categories": [
+        "research",
+        "business"
+      ],
+      "description": "リード調査アシスタント"
+    },
+    {
+      "name": "meeting-insights-analyzer",
+      "source": "composio-awesome",
+      "path": "meeting-insights-analyzer",
+      "categories": [
+        "business",
+        "analytics"
+      ],
+      "description": "会議インサイト分析"
+    },
+    {
+      "name": "raffle-winner-picker",
+      "source": "composio-awesome",
+      "path": "raffle-winner-picker",
+      "categories": [
+        "utility"
+      ],
+      "description": "抽選ツール"
+    },
+    {
+      "name": "video-downloader",
+      "source": "composio-awesome",
+      "path": "video-downloader",
+      "categories": [
+        "utility",
+        "media"
+      ],
+      "description": "動画ダウンローダー"
+    },
+    {
+      "name": "competitive-ads-extractor",
+      "source": "composio-awesome",
+      "path": "competitive-ads-extractor",
+      "categories": [
+        "business",
+        "marketing"
+      ],
+      "description": "競合広告の抽出・分析"
+    },
+    {
+      "name": "playwright-skill",
+      "source": "playwright-skill",
+      "path": "skills/playwright-skill",
+      "categories": [
+        "testing",
+        "automation",
+        "web"
+      ],
+      "description": "Playwright によるブラウザ自動化・E2E テスト実行"
+    },
+    {
+      "name": "webapp-testing",
+      "source": "github-awesome-copilot",
+      "path": "skills/webapp-testing",
+      "categories": [
+        "web",
+        "testing"
+      ],
+      "description": "Web アプリケーションのテスト (GitHub Copilot)"
+    },
+    {
+      "name": "azure-env-builder",
+      "source": "aktsmm-agent-skills",
+      "path": "azure-env-builder",
+      "categories": [
+        "development",
+        "azure"
+      ],
+      "description": "Azure 環境を Bicep で構築"
+    },
+    {
+      "name": "skill-creator",
+      "source": "aktsmm-agent-skills",
+      "path": "skill-creator",
+      "categories": [
+        "meta",
+        "development"
+      ],
+      "description": "新しい Agent Skills を作成"
+    },
+    {
+      "name": "skill-finder",
+      "source": "aktsmm-agent-skills",
+      "path": "skill-finder",
+      "categories": [
+        "meta"
+      ],
+      "description": "Agent Skills を検索・発見"
+    },
+    {
+      "name": "hcp-create-agent",
+      "source": "openshift-ai-helpers",
+      "path": "plugins/hcp/skills/hcp-create-agent",
+      "categories": [
+        "agents",
+        "development"
+      ],
+      "description": "HyperShift Agent プロバイダでクラスタ作成"
+    },
+    {
+      "name": "hcp-create-aws",
+      "source": "openshift-ai-helpers",
+      "path": "plugins/hcp/skills/hcp-create-aws",
+      "categories": [
+        "aws",
+        "cloud"
+      ],
+      "description": "HyperShift で AWS EKS クラスタ作成"
+    },
+    {
+      "name": "hcp-create-azure",
+      "source": "openshift-ai-helpers",
+      "path": "plugins/hcp/skills/hcp-create-azure",
+      "categories": [
+        "azure",
+        "cloud"
+      ],
+      "description": "HyperShift で Azure クラスタ作成"
+    },
+    {
+      "name": "hcp-create-kubevirt",
+      "source": "openshift-ai-helpers",
+      "path": "plugins/hcp/skills/hcp-create-kubevirt",
+      "categories": [
+        "kubernetes",
+        "cloud"
+      ],
+      "description": "HyperShift で KubeVirt クラスタ作成"
+    },
+    {
+      "name": "hcp-create-openstack",
+      "source": "openshift-ai-helpers",
+      "path": "plugins/hcp/skills/hcp-create-openstack",
+      "categories": [
+        "openstack",
+        "cloud"
+      ],
+      "description": "HyperShift で OpenStack クラスタ作成"
+    },
+    {
+      "name": "hcp-create-powervs",
+      "source": "openshift-ai-helpers",
+      "path": "plugins/hcp/skills/hcp-create-powervs",
+      "categories": [
+        "ibm",
+        "cloud"
+      ],
+      "description": "HyperShift で IBM PowerVS クラスタ作成"
+    },
+    {
+      "name": "azure-usage",
+      "source": "claude-codex-settings",
+      "path": "plugins/azure-tools/skills/azure-usage",
+      "categories": [
+        "azure",
+        "cloud"
+      ],
+      "description": "Azure ツール使用ガイド"
+    },
+    {
+      "name": "gcloud-tools",
+      "source": "claude-codex-settings",
+      "path": "plugins/gcloud-tools",
+      "categories": [
+        "gcp",
+        "cloud"
+      ],
+      "description": "Google Cloud ツール設定"
+    },
+    {
+      "name": "mongodb-tools",
+      "source": "claude-codex-settings",
+      "path": "plugins/mongodb-tools",
+      "categories": [
+        "database"
+      ],
+      "description": "MongoDB ツール設定"
+    },
+    {
+      "name": "slack-tools",
+      "source": "claude-codex-settings",
+      "path": "plugins/slack-tools",
+      "categories": [
+        "communication"
+      ],
+      "description": "Slack ツール設定"
+    },
+    {
+      "name": "supabase-tools",
+      "source": "claude-codex-settings",
+      "path": "plugins/supabase-tools",
+      "categories": [
+        "database"
+      ],
+      "description": "Supabase ツール設定"
+    },
+    {
+      "name": "playwright-tools",
+      "source": "claude-codex-settings",
+      "path": "plugins/playwright-tools",
+      "categories": [
+        "testing",
+        "web"
+      ],
+      "description": "Playwright テストツール設定"
+    },
+    {
+      "name": "tavily-tools",
+      "source": "claude-codex-settings",
+      "path": "plugins/tavily-tools",
+      "categories": [
+        "search",
+        "ai"
+      ],
+      "description": "Tavily 検索ツール設定"
+    },
+    {
+      "name": "parallel-executor-skill",
+      "source": "claude-command-control",
+      "path": "skills-templates/orchestration/parallel-executor-skill.md",
+      "categories": [
+        "agents",
+        "workflow",
+        "orchestration"
+      ],
+      "description": "並列エージェント実行・進捗監視・結果集約"
+    },
+    {
+      "name": "agent-communication-skill",
+      "source": "claude-command-control",
+      "path": "skills-templates/orchestration/agent-communication-skill.md",
+      "categories": [
+        "agents",
+        "workflow",
+        "communication"
+      ],
+      "description": "エージェント間メッセージング・ハンドオフ・共有コンテキスト"
+    },
+    {
+      "name": "ai-sdk-agents",
+      "source": "claude-plugins-plus",
+      "path": "plugins/ai-ml/ai-sdk-agents/skills/ai-sdk-agents",
+      "categories": [
+        "agents",
+        "ai",
+        "development"
+      ],
+      "description": "AI SDK v5 マルチエージェントシステム構築"
+    },
+    {
+      "name": "workflow-guide",
+      "source": "claude-code-harness",
+      "path": "skills/workflow-guide",
+      "categories": [
+        "workflow",
+        "development"
+      ],
+      "description": "ワークフローガイド・開発支援"
+    },
+    {
+      "name": "observability",
+      "source": "personal-ai-infra",
+      "path": ".claude/Skills/Observability",
+      "categories": [
+        "monitoring",
+        "agents"
+      ],
+      "description": "AI エージェント監視・オブザーバビリティ"
+    },
+    {
+      "name": "brand-guidelines",
+      "source": "composio-awesome",
+      "path": "brand-guidelines",
+      "categories": [
+        "community"
+      ],
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit..."
+    },
+    {
+      "name": "canvas-design",
+      "source": "composio-awesome",
+      "path": "canvas-design",
+      "categories": [
+        "community"
+      ],
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use th..."
+    },
+    {
+      "name": "internal-comms",
+      "source": "composio-awesome",
+      "path": "internal-comms",
+      "categories": [
+        "community"
+      ],
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that ..."
+    },
+    {
+      "name": "mcp-builder",
+      "source": "composio-awesome",
+      "path": "mcp-builder",
+      "categories": [
+        "community"
+      ],
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact..."
+    },
+    {
+      "name": "skill-creator",
+      "source": "composio-awesome",
+      "path": "skill-creator",
+      "categories": [
+        "community"
+      ],
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new sk..."
+    },
+    {
+      "name": "skill-share",
+      "source": "composio-awesome",
+      "path": "skill-share",
+      "categories": [
+        "community"
+      ],
+      "description": "A skill that creates new Claude skills and automatically shares them on Slack using Rube for seam..."
+    },
+    {
+      "name": "slack-gif-creator",
+      "source": "composio-awesome",
+      "path": "slack-gif-creator",
+      "categories": [
+        "community"
+      ],
+      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and ..."
+    },
+    {
+      "name": "template-skill",
+      "source": "composio-awesome",
+      "path": "template-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "Replace with description of the skill and when Claude should use it."
+    },
+    {
+      "name": "theme-factory",
+      "source": "composio-awesome",
+      "path": "theme-factory",
+      "categories": [
+        "community"
+      ],
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML..."
+    },
+    {
+      "name": "webapp-testing",
+      "source": "composio-awesome",
+      "path": "webapp-testing",
+      "categories": [
+        "community"
+      ],
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verify..."
+    },
+    {
+      "name": "adaptyv",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/adaptyv",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Cloud laboratory platform for automated protein testing and validation. Use when designing protei..."
+    },
+    {
+      "name": "aeon",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/aeon",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "This skill should be used for time series machine learning tasks including classification, regres..."
+    },
+    {
+      "name": "alphafold-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/alphafold-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database",
+        "ml"
+      ],
+      "description": "Access AlphaFold's 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, down..."
+    },
+    {
+      "name": "anndata",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/anndata",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "This skill should be used when working with annotated data matrices in Python, particularly for s..."
+    },
+    {
+      "name": "arboreto",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/arboreto",
+      "categories": [
+        "science",
+        "biology",
+        "data-science"
+      ],
+      "description": "Infer gene regulatory networks (GRNs) from gene expression data using scalable algorithms (GRNBoo..."
+    },
+    {
+      "name": "astropy",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/astropy",
+      "categories": [
+        "science",
+        "physics"
+      ],
+      "description": "Comprehensive Python library for astronomy and astrophysics. This skill should be used when worki..."
+    },
+    {
+      "name": "benchling-integration",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/benchling-integration",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Benchling R&D platform integration. Access registry (DNA, proteins), inventory, ELN entries, work..."
+    },
+    {
+      "name": "biomni",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/biomni",
+      "categories": [
+        "science",
+        "biology",
+        "ml",
+        "medical"
+      ],
+      "description": "Autonomous biomedical AI agent framework for executing complex research tasks across genomics, dr..."
+    },
+    {
+      "name": "biopython",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/biopython",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Primary Python toolkit for molecular biology. Preferred for Python-based PubMed/NCBI queries (Bio..."
+    },
+    {
+      "name": "biorxiv-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/biorxiv-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Efficient database search tool for bioRxiv preprint server. Use this skill when searching for lif..."
+    },
+    {
+      "name": "bioservices",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/bioservices",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Primary Python tool for 40+ bioinformatics services. Preferred for multi-database workflows: UniP..."
+    },
+    {
+      "name": "brenda-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/brenda-database",
+      "categories": [
+        "science",
+        "data-science",
+        "database"
+      ],
+      "description": "Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equa..."
+    },
+    {
+      "name": "cellxgene-census",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/cellxgene-census",
+      "categories": [
+        "science",
+        "biology",
+        "database"
+      ],
+      "description": "Query CZ CELLxGENE Census (61M+ cells). Filter by cell type/tissue/disease, retrieve expression d..."
+    },
+    {
+      "name": "chembl-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/chembl-database",
+      "categories": [
+        "science",
+        "biology",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Query ChEMBL's bioactive molecules and drug discovery data. Search compounds by structure/propert..."
+    },
+    {
+      "name": "cirq",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/cirq",
+      "categories": [
+        "science",
+        "physics"
+      ],
+      "description": "Quantum computing framework for building, simulating, optimizing, and executing quantum circuits...."
+    },
+    {
+      "name": "citation-management",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/citation-management",
+      "categories": [
+        "science",
+        "research"
+      ],
+      "description": "Comprehensive citation management for academic research. Search Google Scholar and PubMed for pap..."
+    },
+    {
+      "name": "clinical-decision-support",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/clinical-decision-support",
+      "categories": [
+        "science",
+        "biology",
+        "medical"
+      ],
+      "description": "Generate professional clinical decision support (CDS) documents for pharmaceutical and clinical r..."
+    },
+    {
+      "name": "clinical-reports",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/clinical-reports",
+      "categories": [
+        "science",
+        "medical"
+      ],
+      "description": "Write comprehensive clinical reports including case reports (CARE guidelines), diagnostic reports..."
+    },
+    {
+      "name": "clinicaltrials-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/clinicaltrials-database",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "database",
+        "medical"
+      ],
+      "description": "Query ClinicalTrials.gov via API v2. Search trials by condition, drug, location, status, or phase..."
+    },
+    {
+      "name": "clinpgx-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/clinpgx-database",
+      "categories": [
+        "science",
+        "biology",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC ..."
+    },
+    {
+      "name": "clinvar-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/clinvar-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database",
+        "medical"
+      ],
+      "description": "Query NCBI ClinVar for variant clinical significance. Search by gene/position, interpret pathogen..."
+    },
+    {
+      "name": "cobrapy",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/cobrapy",
+      "categories": [
+        "science",
+        "biology",
+        "ml"
+      ],
+      "description": "Constraint-based metabolic modeling (COBRA). FBA, FVA, gene knockouts, flux sampling, SBML models..."
+    },
+    {
+      "name": "cosmic-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/cosmic-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational s..."
+    },
+    {
+      "name": "dask",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/dask",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Parallel/distributed computing. Scale pandas/NumPy beyond memory, parallel DataFrames/Arrays, mul..."
+    },
+    {
+      "name": "datacommons-client",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/datacommons-client",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Work with Data Commons, a platform providing programmatic access to public statistical data from ..."
+    },
+    {
+      "name": "datamol",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/datamol",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for stan..."
+    },
+    {
+      "name": "deepchem",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/deepchem",
+      "categories": [
+        "science",
+        "biology",
+        "chemistry",
+        "ml"
+      ],
+      "description": "Molecular machine learning toolkit. Property prediction (ADMET, toxicity), GNNs (GCN, MPNN), Mole..."
+    },
+    {
+      "name": "deeptools",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/deeptools",
+      "categories": [
+        "science",
+        "data-science",
+        "ml"
+      ],
+      "description": "NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/pro..."
+    },
+    {
+      "name": "denario",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/denario",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Multiagent AI system for scientific research assistance that automates research workflows from da..."
+    },
+    {
+      "name": "diffdock",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/diffdock",
+      "categories": [
+        "science",
+        "biology",
+        "database"
+      ],
+      "description": "Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confiden..."
+    },
+    {
+      "name": "dnanexus-integration",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/dnanexus-integration",
+      "categories": [
+        "science",
+        "biology",
+        "data-science"
+      ],
+      "description": "DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python ..."
+    },
+    {
+      "name": "document-skills",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/document-skills",
+      "categories": [
+        "community"
+      ],
+      "description": "Scientific document processing and management utilities"
+    },
+    {
+      "name": "drugbank-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/drugbank-database",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Access and analyze comprehensive drug information from the DrugBank database including drug prope..."
+    },
+    {
+      "name": "ena-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/ena-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Access European Nucleotide Archive via API/FTP. Retrieve DNA/RNA sequences, raw reads (FASTQ), ge..."
+    },
+    {
+      "name": "ensembl-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/ensembl-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Query Ensembl genome database REST API for 250+ species. Gene lookups, sequence retrieval, varian..."
+    },
+    {
+      "name": "esm",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/esm",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein d..."
+    },
+    {
+      "name": "etetoolkit",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/etetoolkit",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Phylogenetic tree toolkit (ETE). Tree manipulation (Newick/NHX), evolutionary event detection, or..."
+    },
+    {
+      "name": "exploratory-data-analysis",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/exploratory-data-analysis",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats..."
+    },
+    {
+      "name": "fda-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/fda-database",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA)..."
+    },
+    {
+      "name": "flowio",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/flowio",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Parse FCS (Flow Cytometry Standard) files v2.0-3.1. Extract events as NumPy arrays, read metadata..."
+    },
+    {
+      "name": "fluidsim",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/fluidsim",
+      "categories": [
+        "science"
+      ],
+      "description": "Framework for computational fluid dynamics simulations using Python. Use when running fluid dynam..."
+    },
+    {
+      "name": "gene-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/gene-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Query NCBI Gene via E-utilities/Datasets API. Search by symbol/ID, retrieve gene info (RefSeqs, G..."
+    },
+    {
+      "name": "generate-image",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/generate-image",
+      "categories": [
+        "science",
+        "biology",
+        "ml"
+      ],
+      "description": "Generate or edit images using AI models (FLUX, Gemini). Use for general-purpose image generation ..."
+    },
+    {
+      "name": "geniml",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/geniml",
+      "categories": [
+        "science",
+        "data-science",
+        "ml"
+      ],
+      "description": "This skill should be used when working with genomic interval data (BED files) for machine learnin..."
+    },
+    {
+      "name": "geo-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/geo-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Access NCBI GEO for gene expression/genomics data. Search/download microarray and RNA-seq dataset..."
+    },
+    {
+      "name": "geopandas",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/geopandas",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPack..."
+    },
+    {
+      "name": "get-available-resources",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/get-available-resources",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "This skill should be used at the start of any computationally intensive scientific task to detect..."
+    },
+    {
+      "name": "gget",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/gget",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "CLI/Python toolkit for rapid bioinformatics queries. Preferred for quick BLAST searches. Access t..."
+    },
+    {
+      "name": "gtars",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/gtars",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "High-performance toolkit for genomic interval analysis in Rust with Python bindings. Use when wor..."
+    },
+    {
+      "name": "gwas-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/gwas-database",
+      "categories": [
+        "science",
+        "data-science",
+        "database",
+        "ml"
+      ],
+      "description": "Query NHGRI-EBI GWAS Catalog for SNP-trait associations. Search variants by rs ID, disease/trait,..."
+    },
+    {
+      "name": "histolab",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/histolab",
+      "categories": [
+        "science"
+      ],
+      "description": "Digital pathology image processing toolkit for whole slide images (WSI). Use this skill when work..."
+    },
+    {
+      "name": "hmdb-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/hmdb-database",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Access Human Metabolome Database (220K+ metabolites). Search by name/ID/structure, retrieve chemi..."
+    },
+    {
+      "name": "hypogenic",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/hypogenic",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Automated hypothesis generation and testing using large language models. Use this skill when gene..."
+    },
+    {
+      "name": "hypothesis-generation",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/hypothesis-generation",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Generate testable hypotheses. Formulate from observations, design experiments, explore competing ..."
+    },
+    {
+      "name": "kegg-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/kegg-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metab..."
+    },
+    {
+      "name": "labarchive-integration",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/labarchive-integration",
+      "categories": [
+        "science"
+      ],
+      "description": "Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup not..."
+    },
+    {
+      "name": "lamindb",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/lamindb",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "This skill should be used when working with LaminDB, an open-source data framework for biology th..."
+    },
+    {
+      "name": "latchbio-integration",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/latchbio-integration",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task deco..."
+    },
+    {
+      "name": "latex-posters",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/latex-posters",
+      "categories": [
+        "science"
+      ],
+      "description": "Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Suppor..."
+    },
+    {
+      "name": "literature-review",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/literature-review",
+      "categories": [
+        "science",
+        "data-science",
+        "database",
+        "research"
+      ],
+      "description": "Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, a..."
+    },
+    {
+      "name": "market-research-reports",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/market-research-reports",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Generate comprehensive market research reports (50+ pages) in the style of top consulting firms (..."
+    },
+    {
+      "name": "markitdown",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/markitdown",
+      "categories": [
+        "science"
+      ],
+      "description": "Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR)..."
+    },
+    {
+      "name": "matchms",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/matchms",
+      "categories": [
+        "science",
+        "data-science",
+        "ml"
+      ],
+      "description": "Mass spectrometry analysis. Process mzML/MGF/MSP, spectral similarity (cosine, modified cosine), ..."
+    },
+    {
+      "name": "matplotlib",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/matplotlib",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Foundational plotting library. Create line plots, scatter, bar, histograms, heatmaps, 3D, subplot..."
+    },
+    {
+      "name": "medchem",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/medchem",
+      "categories": [
+        "science",
+        "chemistry",
+        "ml"
+      ],
+      "description": "Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structur..."
+    },
+    {
+      "name": "metabolomics-workbench-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/metabolomics-workbench-database",
+      "categories": [
+        "science",
+        "data-science",
+        "database"
+      ],
+      "description": "Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenc..."
+    },
+    {
+      "name": "modal",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/modal",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Run Python code in the cloud with serverless containers, GPUs, and autoscaling. Use when deployin..."
+    },
+    {
+      "name": "molfeat",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/molfeat",
+      "categories": [
+        "science",
+        "biology",
+        "ml"
+      ],
+      "description": "Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (C..."
+    },
+    {
+      "name": "networkx",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/networkx",
+      "categories": [
+        "science"
+      ],
+      "description": "Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs in Pyt..."
+    },
+    {
+      "name": "neurokit2",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/neurokit2",
+      "categories": [
+        "science",
+        "biology",
+        "data-science"
+      ],
+      "description": "Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, E..."
+    },
+    {
+      "name": "neuropixels-analysis",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/neuropixels-analysis",
+      "categories": [
+        "science",
+        "data-science",
+        "ml"
+      ],
+      "description": "Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correctio..."
+    },
+    {
+      "name": "omero-integration",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/omero-integration",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Microscopy data management platform. Access images via Python, retrieve datasets, analyze pixels,..."
+    },
+    {
+      "name": "openalex-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/openalex-database",
+      "categories": [
+        "science",
+        "data-science",
+        "database",
+        "research"
+      ],
+      "description": "Query and analyze scholarly literature using the OpenAlex database. This skill should be used whe..."
+    },
+    {
+      "name": "opentargets-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/opentargets-database",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Query Open Targets Platform for target-disease associations, drug target discovery, tractability/..."
+    },
+    {
+      "name": "opentrons-integration",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/opentrons-integration",
+      "categories": [
+        "science"
+      ],
+      "description": "Lab automation platform for Flex/OT-2 robots. Write Protocol API v2 protocols, liquid handling, h..."
+    },
+    {
+      "name": "paper-2-web",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/paper-2-web",
+      "categories": [
+        "science",
+        "research"
+      ],
+      "description": "This skill should be used when converting academic papers into promotional and presentation forma..."
+    },
+    {
+      "name": "pathml",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pathml",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Computational pathology toolkit for analyzing whole-slide images (WSI) and multiparametric imagin..."
+    },
+    {
+      "name": "pdb-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pdb-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, downlo..."
+    },
+    {
+      "name": "peer-review",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/peer-review",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Systematic peer review toolkit. Evaluate methodology, statistics, design, reproducibility, ethics..."
+    },
+    {
+      "name": "pennylane",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pennylane",
+      "categories": [
+        "science",
+        "chemistry",
+        "ml",
+        "physics"
+      ],
+      "description": "Cross-platform Python library for quantum computing, quantum machine learning, and quantum chemis..."
+    },
+    {
+      "name": "perplexity-search",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/perplexity-search",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Perform AI-powered web searches with real-time information using Perplexity models via LiteLLM an..."
+    },
+    {
+      "name": "plotly",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/plotly",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Interactive scientific and statistical data visualization library for Python. Use when creating c..."
+    },
+    {
+      "name": "polars",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/polars",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Fast DataFrame library (Apache Arrow). Select, filter, group_by, joins, lazy evaluation, CSV/Parq..."
+    },
+    {
+      "name": "pptx-posters",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pptx-posters",
+      "categories": [
+        "science"
+      ],
+      "description": "Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Suppor..."
+    },
+    {
+      "name": "protocolsio-integration",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/protocolsio-integration",
+      "categories": [
+        "science"
+      ],
+      "description": "Integration with protocols.io API for managing scientific protocols. This skill should be used wh..."
+    },
+    {
+      "name": "pubchem-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pubchem-database",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Query PubChem via PUG-REST API/PubChemPy (110M+ compounds). Search by name/CID/SMILES, retrieve p..."
+    },
+    {
+      "name": "pubmed-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pubmed-database",
+      "categories": [
+        "science",
+        "data-science",
+        "database"
+      ],
+      "description": "Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processin..."
+    },
+    {
+      "name": "pufferlib",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pufferlib",
+      "categories": [
+        "science"
+      ],
+      "description": "This skill should be used when working with reinforcement learning tasks including high-performan..."
+    },
+    {
+      "name": "pydeseq2",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pydeseq2",
+      "categories": [
+        "science",
+        "biology",
+        "data-science"
+      ],
+      "description": "Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts..."
+    },
+    {
+      "name": "pydicom",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pydicom",
+      "categories": [
+        "science"
+      ],
+      "description": "Python library for working with DICOM (Digital Imaging and Communications in Medicine) files. Use..."
+    },
+    {
+      "name": "pyhealth",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pyhealth",
+      "categories": [
+        "science",
+        "ml",
+        "medical"
+      ],
+      "description": "Comprehensive healthcare AI toolkit for developing, testing, and deploying machine learning model..."
+    },
+    {
+      "name": "pylabrobot",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pylabrobot",
+      "categories": [
+        "science"
+      ],
+      "description": "Laboratory automation toolkit for controlling liquid handlers, plate readers, pumps, heater shake..."
+    },
+    {
+      "name": "pymatgen",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pymatgen",
+      "categories": [
+        "science"
+      ],
+      "description": "Materials science toolkit. Crystal structures (CIF, POSCAR), phase diagrams, band structure, DOS,..."
+    },
+    {
+      "name": "pymc",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pymc",
+      "categories": [
+        "science"
+      ],
+      "description": "Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/W..."
+    },
+    {
+      "name": "pymoo",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pymoo",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Multi-objective optimization framework. NSGA-II, NSGA-III, MOEA/D, Pareto fronts, constraint hand..."
+    },
+    {
+      "name": "pyopenms",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pyopenms",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Python interface to OpenMS for mass spectrometry data analysis. Use for LC-MS/MS proteomics and m..."
+    },
+    {
+      "name": "pysam",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pysam",
+      "categories": [
+        "science",
+        "biology"
+      ],
+      "description": "Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences..."
+    },
+    {
+      "name": "pytdc",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pytdc",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "ml"
+      ],
+      "description": "Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, sc..."
+    },
+    {
+      "name": "pytorch-lightning",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pytorch-lightning",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configu..."
+    },
+    {
+      "name": "qiskit",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/qiskit",
+      "categories": [
+        "science",
+        "physics"
+      ],
+      "description": "Comprehensive quantum computing toolkit for building, optimizing, and executing quantum circuits...."
+    },
+    {
+      "name": "qutip",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/qutip",
+      "categories": [
+        "science",
+        "data-science",
+        "physics"
+      ],
+      "description": "Quantum mechanics simulations and analysis using QuTiP (Quantum Toolbox in Python). Use when work..."
+    },
+    {
+      "name": "rdkit",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/rdkit",
+      "categories": [
+        "science",
+        "biology",
+        "chemistry",
+        "ml"
+      ],
+      "description": "Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, ..."
+    },
+    {
+      "name": "reactome-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/reactome-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Query Reactome REST API for pathway analysis, enrichment, gene-pathway mapping, disease pathways,..."
+    },
+    {
+      "name": "research-grants",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/research-grants",
+      "categories": [
+        "science"
+      ],
+      "description": "Write competitive research proposals for NSF, NIH, DOE, and DARPA. Agency-specific formatting, re..."
+    },
+    {
+      "name": "research-lookup",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/research-lookup",
+      "categories": [
+        "science"
+      ],
+      "description": "Look up current research information using Perplexity's Sonar Pro Search or Sonar Reasoning Pro m..."
+    },
+    {
+      "name": "scanpy",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scanpy",
+      "categories": [
+        "science",
+        "biology",
+        "data-science"
+      ],
+      "description": "Single-cell RNA-seq analysis. Load .h5ad/10X data, QC, normalization, PCA/UMAP/t-SNE, Leiden clus..."
+    },
+    {
+      "name": "scholar-evaluation",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scholar-evaluation",
+      "categories": [
+        "science"
+      ],
+      "description": "Systematically evaluate scholarly work using the ScholarEval framework, providing structured asse..."
+    },
+    {
+      "name": "scientific-brainstorming",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scientific-brainstorming",
+      "categories": [
+        "science",
+        "biology",
+        "ml"
+      ],
+      "description": "Research ideation partner. Generate hypotheses, explore interdisciplinary connections, challenge ..."
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scientific-critical-thinking",
+      "categories": [
+        "science"
+      ],
+      "description": "Evaluate research rigor. Assess methodology, experimental design, statistical validity, biases, c..."
+    },
+    {
+      "name": "scientific-schematics",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scientific-schematics",
+      "categories": [
+        "science",
+        "chemistry",
+        "ml",
+        "research"
+      ],
+      "description": "Create publication-quality scientific diagrams using Nano Banana Pro AI with smart iterative refi..."
+    },
+    {
+      "name": "scientific-slides",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scientific-slides",
+      "categories": [
+        "science"
+      ],
+      "description": "Build slide decks and presentations for research talks. Use this for making PowerPoint slides, co..."
+    },
+    {
+      "name": "scientific-visualization",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scientific-visualization",
+      "categories": [
+        "science",
+        "data-science",
+        "research"
+      ],
+      "description": "Create publication figures with matplotlib/seaborn/plotly. Multi-panel layouts, error bars, signi..."
+    },
+    {
+      "name": "scientific-writing",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scientific-writing",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraph..."
+    },
+    {
+      "name": "scikit-bio",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scikit-bio",
+      "categories": [
+        "science",
+        "biology",
+        "data-science"
+      ],
+      "description": "Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (al..."
+    },
+    {
+      "name": "scikit-learn",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scikit-learn",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Machine learning in Python with scikit-learn. Use when working with supervised learning (classifi..."
+    },
+    {
+      "name": "scikit-survival",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scikit-survival",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-sur..."
+    },
+    {
+      "name": "scvi-tools",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scvi-tools",
+      "categories": [
+        "science",
+        "biology",
+        "data-science"
+      ],
+      "description": "This skill should be used when working with single-cell omics data analysis using scvi-tools, inc..."
+    },
+    {
+      "name": "seaborn",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/seaborn",
+      "categories": [
+        "science",
+        "data-science",
+        "ml"
+      ],
+      "description": "Statistical visualization. Scatter, box, violin, heatmaps, pair plots, regression, correlation ma..."
+    },
+    {
+      "name": "shap",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/shap",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this sk..."
+    },
+    {
+      "name": "simpy",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/simpy",
+      "categories": [
+        "science"
+      ],
+      "description": "Process-based discrete-event simulation framework in Python. Use this skill when building simulat..."
+    },
+    {
+      "name": "stable-baselines3",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/stable-baselines3",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Use this skill for reinforcement learning tasks including training RL agents (PPO, SAC, DQN, TD3,..."
+    },
+    {
+      "name": "statistical-analysis",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/statistical-analysis",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Statistical analysis toolkit. Hypothesis tests (t-test, ANOVA, chi-square), regression, correlati..."
+    },
+    {
+      "name": "statsmodels",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/statsmodels",
+      "categories": [
+        "science"
+      ],
+      "description": "Statistical modeling toolkit. OLS, GLM, logistic, ARIMA, time series, hypothesis tests, diagnosti..."
+    },
+    {
+      "name": "string-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/string-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analy..."
+    },
+    {
+      "name": "sympy",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/sympy",
+      "categories": [
+        "science"
+      ],
+      "description": "Use this skill when working with symbolic mathematics in Python. This skill should be used for sy..."
+    },
+    {
+      "name": "torch-geometric",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/torch_geometric",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, het..."
+    },
+    {
+      "name": "torchdrug",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/torchdrug",
+      "categories": [
+        "science",
+        "biology",
+        "chemistry"
+      ],
+      "description": "Graph-based drug discovery toolkit. Molecular property prediction (ADMET), protein modeling, know..."
+    },
+    {
+      "name": "transformers",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/transformers",
+      "categories": [
+        "science",
+        "ml"
+      ],
+      "description": "This skill should be used when working with pre-trained transformer models for natural language p..."
+    },
+    {
+      "name": "treatment-plans",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/treatment-plans",
+      "categories": [
+        "science",
+        "biology",
+        "medical"
+      ],
+      "description": "Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical..."
+    },
+    {
+      "name": "umap-learn",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/umap-learn",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "UMAP dimensionality reduction. Fast nonlinear manifold learning for 2D/3D visualization, clusteri..."
+    },
+    {
+      "name": "uniprot-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/uniprot-database",
+      "categories": [
+        "science",
+        "biology",
+        "data-science",
+        "database"
+      ],
+      "description": "Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEM..."
+    },
+    {
+      "name": "uspto-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/uspto-database",
+      "categories": [
+        "science",
+        "data-science",
+        "database"
+      ],
+      "description": "Access USPTO APIs for patent/trademark searches, examination history (PEDS), assignments, citatio..."
+    },
+    {
+      "name": "vaex",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/vaex",
+      "categories": [
+        "science",
+        "data-science"
+      ],
+      "description": "Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed..."
+    },
+    {
+      "name": "venue-templates",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/venue-templates",
+      "categories": [
+        "science"
+      ],
+      "description": "Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for majo..."
+    },
+    {
+      "name": "zarr-python",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/zarr-python",
+      "categories": [
+        "science"
+      ],
+      "description": "Chunked N-D arrays for cloud storage. Compressed arrays, parallel I/O, S3/GCS integration, NumPy/..."
+    },
+    {
+      "name": "zinc-database",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/zinc-database",
+      "categories": [
+        "science",
+        "chemistry",
+        "data-science",
+        "database"
+      ],
+      "description": "Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-read..."
+    },
+    {
+      "name": "agent-skill-bridge",
+      "source": "claude-command-control",
+      "path": "skills/agent-skill-bridge",
+      "categories": [
+        "community"
+      ],
+      "description": "Bridges and integrates multiple agent skills for coordinated task execution"
+    },
+    {
+      "name": "architect-role-skill",
+      "source": "claude-command-control",
+      "path": "skills/architect-role-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "|"
+    },
+    {
+      "name": "builder-role-skill",
+      "source": "claude-command-control",
+      "path": "skills/builder-role-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "|"
+    },
+    {
+      "name": "content-research-writer",
+      "source": "claude-command-control",
+      "path": "skills/content-research-writer",
+      "categories": [
+        "community"
+      ],
+      "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks..."
+    },
+    {
+      "name": "devops-role-skill",
+      "source": "claude-command-control",
+      "path": "skills/devops-role-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "|"
+    },
+    {
+      "name": "documentation-update",
+      "source": "claude-command-control",
+      "path": "skills/documentation-update",
+      "categories": [
+        "community"
+      ],
+      "description": "Reusable logic for updating repository documentation (README, indices, tables) with new content w..."
+    },
+    {
+      "name": "file-categorization",
+      "source": "claude-command-control",
+      "path": "skills/file-categorization",
+      "categories": [
+        "community"
+      ],
+      "description": "Reusable logic for categorizing files as Command, Agent, Skill, or Documentation based on structu..."
+    },
+    {
+      "name": "researcher-role-skill",
+      "source": "claude-command-control",
+      "path": "skills/researcher-role-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "|"
+    },
+    {
+      "name": "root-cause-tracing",
+      "source": "claude-command-control",
+      "path": "skills/root-cause-tracing",
+      "categories": [
+        "community"
+      ],
+      "description": "Use when errors occur deep in execution and you need to trace back to find the original trigger -..."
+    },
+    {
+      "name": "scribe-role-skill",
+      "source": "claude-command-control",
+      "path": "skills/scribe-role-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "|"
+    },
+    {
+      "name": "sharing-skills",
+      "source": "claude-command-control",
+      "path": "skills/sharing-skills",
+      "categories": [
+        "community"
+      ],
+      "description": "Use when you've developed a broadly useful skill and want to contribute it upstream via pull requ..."
+    },
+    {
+      "name": "skill-creator",
+      "source": "claude-command-control",
+      "path": "skills/skill-creator",
+      "categories": [
+        "community"
+      ],
+      "description": "**Version**: 1"
+    },
+    {
+      "name": "skill-orchestrator",
+      "source": "claude-command-control",
+      "path": "skills/skill-orchestrator",
+      "categories": [
+        "community"
+      ],
+      "description": "Orchestrates and coordinates execution of multiple skills for complex workflows"
+    },
+    {
+      "name": "software-architecture",
+      "source": "claude-command-control",
+      "path": "skills/software-architecture",
+      "categories": [
+        "community"
+      ],
+      "description": "Guide for quality focused software architecture. This skill should be used when users want to wri..."
+    },
+    {
+      "name": "subagent-driven-development",
+      "source": "claude-command-control",
+      "path": "skills/subagent-driven-development",
+      "categories": [
+        "community"
+      ],
+      "description": "Use when executing implementation plans with independent tasks in the current session - dispatche..."
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "source": "claude-command-control",
+      "path": "skills/ui-ux-pro-max",
+      "categories": [
+        "community"
+      ],
+      "description": "UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 8 stacks (React, ..."
+    },
+    {
+      "name": "using-git-worktrees",
+      "source": "claude-command-control",
+      "path": "skills/using-git-worktrees",
+      "categories": [
+        "community"
+      ],
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing im..."
+    },
+    {
+      "name": "using-superpowers",
+      "source": "claude-command-control",
+      "path": "skills/using-superpowers",
+      "categories": [
+        "community"
+      ],
+      "description": "Use when starting any conversation - establishes mandatory workflows for finding and using skills..."
+    },
+    {
+      "name": "validator-role-skill",
+      "source": "claude-command-control",
+      "path": "skills/validator-role-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "|"
+    },
+    {
+      "name": "schema-optimization",
+      "source": "claude-plugins-plus",
+      "path": ".claude/skills/schema-optimization",
+      "categories": [
+        "community"
+      ],
+      "description": "Optimizes database schemas for performance, normalization, and query efficiency"
+    },
+    {
+      "name": "2agent",
+      "source": "claude-code-harness",
+      "path": "skills/2agent",
+      "categories": [
+        "community"
+      ],
+      "description": "Configures 2-Agent workflow between PM and implementation roles. Use when user mentions 2-Agent, ..."
+    },
+    {
+      "name": "auth",
+      "source": "claude-code-harness",
+      "path": "skills/auth",
+      "categories": [
+        "community"
+      ],
+      "description": "Implements authentication and payment features using Clerk, Supabase Auth, or Stripe. Use when us..."
+    },
+    {
+      "name": "ci",
+      "source": "claude-code-harness",
+      "path": "skills/ci",
+      "categories": [
+        "community"
+      ],
+      "description": "Diagnoses and fixes CI/CD pipeline failures. Use when user mentions 'CI', 'GitHub Actions', 'GitL..."
+    },
+    {
+      "name": "deploy",
+      "source": "claude-code-harness",
+      "path": "skills/deploy",
+      "categories": [
+        "community"
+      ],
+      "description": "Sets up deployment, analytics, and health monitoring for projects. Use when user mentions デプロイ, d..."
+    },
+    {
+      "name": "docs",
+      "source": "claude-code-harness",
+      "path": "skills/docs",
+      "categories": [
+        "community"
+      ],
+      "description": "Generates documentation files including NotebookLM YAML and slide content. Use when user mentions..."
+    },
+    {
+      "name": "impl",
+      "source": "claude-code-harness",
+      "path": "skills/impl",
+      "categories": [
+        "community"
+      ],
+      "description": "Implements features and writes code based on Plans.md tasks. Use when user mentions 実装, implement..."
+    },
+    {
+      "name": "maintenance",
+      "source": "claude-code-harness",
+      "path": "skills/maintenance",
+      "categories": [
+        "community"
+      ],
+      "description": "Cleans up and organizes project files. Use when user mentions '整理', 'cleanup', 'アーカイブ', 'archive'..."
+    },
+    {
+      "name": "memory",
+      "source": "claude-code-harness",
+      "path": "skills/memory",
+      "categories": [
+        "community"
+      ],
+      "description": "Manages memory, SSOT files, and Plans.md operations. Use when user mentions メモリ, memory, SSOT, de..."
+    },
+    {
+      "name": "parallel-workflows",
+      "source": "claude-code-harness",
+      "path": "skills/parallel-workflows",
+      "categories": [
+        "community"
+      ],
+      "description": "Optimizes parallel execution of multiple tasks. Use when user mentions 並列で実行, 同時にやって, まとめてやって, ru..."
+    },
+    {
+      "name": "plans-management",
+      "source": "claude-code-harness",
+      "path": "skills/plans-management",
+      "categories": [
+        "community"
+      ],
+      "description": "Manages Plans.md tasks and marker operations. Use when user mentions タスクを追加, Plans.md更新, 完了マーク, タ..."
+    },
+    {
+      "name": "principles",
+      "source": "claude-code-harness",
+      "path": "skills/principles",
+      "categories": [
+        "community"
+      ],
+      "description": "Provides development principles, guidelines, and VibeCoder guidance. Use when user mentions 原則, p..."
+    },
+    {
+      "name": "review",
+      "source": "claude-code-harness",
+      "path": "skills/review",
+      "categories": [
+        "community"
+      ],
+      "description": "Reviews code for quality, security, performance, and accessibility issues. Use when user mentions..."
+    },
+    {
+      "name": "session-init",
+      "source": "claude-code-harness",
+      "path": "skills/session-init",
+      "categories": [
+        "community"
+      ],
+      "description": "Initializes session with environment check and task status overview. Use when user mentions セッション..."
+    },
+    {
+      "name": "session-memory",
+      "source": "claude-code-harness",
+      "path": "skills/session-memory",
+      "categories": [
+        "community"
+      ],
+      "description": "Manages cross-session learning and memory persistence. Use when user mentions 前回何をした, 履歴, 過去の作業, ..."
+    },
+    {
+      "name": "setup",
+      "source": "claude-code-harness",
+      "path": "skills/setup",
+      "categories": [
+        "community"
+      ],
+      "description": "Sets up new projects and generates workflow files like CLAUDE.md, AGENTS.md, Plans.md. Use when u..."
+    },
+    {
+      "name": "troubleshoot",
+      "source": "claude-code-harness",
+      "path": "skills/troubleshoot",
+      "categories": [
+        "community"
+      ],
+      "description": "Guides diagnosis and resolution when problems occur. Use when user mentions 動かない, エラーが出た, 壊れた, うま..."
+    },
+    {
+      "name": "ui",
+      "source": "claude-code-harness",
+      "path": "skills/ui",
+      "categories": [
+        "community"
+      ],
+      "description": "Generates UI components and feedback forms. Use when user mentions コンポーネント, component, UI, ヒーロー, ..."
+    },
+    {
+      "name": "verify",
+      "source": "claude-code-harness",
+      "path": "skills/verify",
+      "categories": [
+        "community"
+      ],
+      "description": "Verifies builds, recovers from errors, and applies review fixes. Use when user mentions ビルド, buil..."
+    },
+    {
+      "name": "vibecoder-guide",
+      "source": "claude-code-harness",
+      "path": "skills/vibecoder-guide",
+      "categories": [
+        "community"
+      ],
+      "description": "Guides VibeCoder (non-technical users) through natural language development (legacy). Use when us..."
+    },
+    {
+      "name": "workflow",
+      "source": "claude-code-harness",
+      "path": "skills/workflow",
+      "categories": [
+        "community"
+      ],
+      "description": "Manages workflow transitions including handoffs between PM and implementation roles, and auto-fix..."
+    },
+    {
+      "name": "iso-13485-certification",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/iso-13485-certification",
+      "categories": [
+        "science",
+        "medical"
+      ],
+      "description": "Comprehensive toolkit for preparing ISO 13485 certification documentation for medical device Qual..."
+    },
+    {
+      "name": "agentic-workflow-guide",
+      "source": "aktsmm-agent-skills",
+      "path": "agentic-workflow-guide",
+      "categories": [
+        "community"
+      ],
+      "description": "Design, review, and improve agent workflows based on proven design principles (SSOT, SRP, Fail Fa..."
+    },
+    {
+      "name": "pdf",
+      "source": "aktsmm-agent-skills",
+      "path": "pdf",
+      "categories": [
+        "community"
+      ],
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging..."
+    },
+    {
+      "name": "braiins-ecosystem",
+      "source": "claude-command-control",
+      "path": "skills/braiins-ecosystem",
+      "categories": [
+        "community"
+      ],
+      "description": "Unified Braiins ecosystem skill covering all Bitcoin mining tools - OS firmware, Pool, Toolbox, M..."
+    },
+    {
+      "name": "braiins-insights",
+      "source": "claude-command-control",
+      "path": "skills/braiins-insights",
+      "categories": [
+        "community"
+      ],
+      "description": "Braiins Learn - Bitcoin mining profitability calculators, charts, and data dashboard"
+    },
+    {
+      "name": "braiins-manager",
+      "source": "claude-command-control",
+      "path": "skills/braiins-manager",
+      "categories": [
+        "community"
+      ],
+      "description": "Braiins Manager - web-based dashboard for monitoring and managing Bitcoin mining operations with ..."
+    },
+    {
+      "name": "braiins-os",
+      "source": "claude-command-control",
+      "path": "skills/braiins-os",
+      "categories": [
+        "community"
+      ],
+      "description": "Comprehensive Braiins OS skill covering API, feeds, and documentation"
+    },
+    {
+      "name": "braiins-pool",
+      "source": "claude-command-control",
+      "path": "skills/braiins-pool",
+      "categories": [
+        "community"
+      ],
+      "description": "Comprehensive Braiins Pool skill - oldest Bitcoin mining pool with FPPS rewards, Lightning payout..."
+    },
+    {
+      "name": "braiins-proxy",
+      "source": "claude-command-control",
+      "path": "skills/braiins-proxy",
+      "categories": [
+        "community"
+      ],
+      "description": "Braiins Farm Proxy - high-performance Stratum V2 mining proxy for large-scale Bitcoin mining oper..."
+    },
+    {
+      "name": "braiins-toolbox",
+      "source": "claude-command-control",
+      "path": "skills/braiins-toolbox",
+      "categories": [
+        "community"
+      ],
+      "description": "Comprehensive Braiins Toolbox skill - batch management tool for Bitcoin mining operations with GU..."
+    },
+    {
+      "name": "farm-monitor",
+      "source": "claude-command-control",
+      "path": "skills/farm-monitor",
+      "categories": [
+        "community"
+      ],
+      "description": "Braiins Farm Monitor - Bitcoin mining fleet monitoring and management"
+    },
+    {
+      "name": "cursor-mem",
+      "source": "claude-code-harness",
+      "path": "skills/cursor-mem",
+      "categories": [
+        "community"
+      ],
+      "description": "Cursorでclaude-memのMCPサーバーにアクセスし、過去のセッション記録を検索・新しい観測を記録。トリガー: 'メモリ検索', 'claude-mem', '過去の判断', '記録し..."
+    },
+    {
+      "name": "claude-api",
+      "source": "anthropics-skills",
+      "path": "skills/claude-api",
+      "categories": [
+        "community"
+      ],
+      "description": "claude-api skill"
+    },
+    {
+      "name": "acquire-codebase-knowledge",
+      "source": "github-awesome-copilot",
+      "path": "skills/acquire-codebase-knowledge",
+      "categories": [
+        "community"
+      ],
+      "description": "acquire-codebase-knowledge skill"
+    },
+    {
+      "name": "add-educational-comments",
+      "source": "github-awesome-copilot",
+      "path": "skills/add-educational-comments",
+      "categories": [
+        "community"
+      ],
+      "description": "add-educational-comments skill"
+    },
+    {
+      "name": "agent-governance",
+      "source": "github-awesome-copilot",
+      "path": "skills/agent-governance",
+      "categories": [
+        "community"
+      ],
+      "description": "agent-governance skill"
+    },
+    {
+      "name": "agent-owasp-compliance",
+      "source": "github-awesome-copilot",
+      "path": "skills/agent-owasp-compliance",
+      "categories": [
+        "community"
+      ],
+      "description": "agent-owasp-compliance skill"
+    },
+    {
+      "name": "agent-supply-chain",
+      "source": "github-awesome-copilot",
+      "path": "skills/agent-supply-chain",
+      "categories": [
+        "community"
+      ],
+      "description": "agent-supply-chain skill"
+    },
+    {
+      "name": "agentic-eval",
+      "source": "github-awesome-copilot",
+      "path": "skills/agentic-eval",
+      "categories": [
+        "community"
+      ],
+      "description": "agentic-eval skill"
+    },
+    {
+      "name": "ai-prompt-engineering-safety-review",
+      "source": "github-awesome-copilot",
+      "path": "skills/ai-prompt-engineering-safety-review",
+      "categories": [
+        "community"
+      ],
+      "description": "ai-prompt-engineering-safety-review skill"
+    },
+    {
+      "name": "appinsights-instrumentation",
+      "source": "github-awesome-copilot",
+      "path": "skills/appinsights-instrumentation",
+      "categories": [
+        "community"
+      ],
+      "description": "appinsights-instrumentation skill"
+    },
+    {
+      "name": "apple-appstore-reviewer",
+      "source": "github-awesome-copilot",
+      "path": "skills/apple-appstore-reviewer",
+      "categories": [
+        "community"
+      ],
+      "description": "apple-appstore-reviewer skill"
+    },
+    {
+      "name": "arch-linux-triage",
+      "source": "github-awesome-copilot",
+      "path": "skills/arch-linux-triage",
+      "categories": [
+        "community"
+      ],
+      "description": "arch-linux-triage skill"
+    },
+    {
+      "name": "architecture-blueprint-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/architecture-blueprint-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "architecture-blueprint-generator skill"
+    },
+    {
+      "name": "arize-ai-provider-integration",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-ai-provider-integration",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-ai-provider-integration skill"
+    },
+    {
+      "name": "arize-annotation",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-annotation",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-annotation skill"
+    },
+    {
+      "name": "arize-dataset",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-dataset",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-dataset skill"
+    },
+    {
+      "name": "arize-evaluator",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-evaluator",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-evaluator skill"
+    },
+    {
+      "name": "arize-experiment",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-experiment",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-experiment skill"
+    },
+    {
+      "name": "arize-instrumentation",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-instrumentation",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-instrumentation skill"
+    },
+    {
+      "name": "arize-link",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-link",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-link skill"
+    },
+    {
+      "name": "arize-prompt-optimization",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-prompt-optimization",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-prompt-optimization skill"
+    },
+    {
+      "name": "arize-trace",
+      "source": "github-awesome-copilot",
+      "path": "skills/arize-trace",
+      "categories": [
+        "community"
+      ],
+      "description": "arize-trace skill"
+    },
+    {
+      "name": "aspire",
+      "source": "github-awesome-copilot",
+      "path": "skills/aspire",
+      "categories": [
+        "community"
+      ],
+      "description": "aspire skill"
+    },
+    {
+      "name": "aspnet-minimal-api-openapi",
+      "source": "github-awesome-copilot",
+      "path": "skills/aspnet-minimal-api-openapi",
+      "categories": [
+        "community"
+      ],
+      "description": "aspnet-minimal-api-openapi skill"
+    },
+    {
+      "name": "automate-this",
+      "source": "github-awesome-copilot",
+      "path": "skills/automate-this",
+      "categories": [
+        "community"
+      ],
+      "description": "automate-this skill"
+    },
+    {
+      "name": "autoresearch",
+      "source": "github-awesome-copilot",
+      "path": "skills/autoresearch",
+      "categories": [
+        "community"
+      ],
+      "description": "autoresearch skill"
+    },
+    {
+      "name": "aws-cdk-python-setup",
+      "source": "github-awesome-copilot",
+      "path": "skills/aws-cdk-python-setup",
+      "categories": [
+        "community"
+      ],
+      "description": "aws-cdk-python-setup skill"
+    },
+    {
+      "name": "az-cost-optimize",
+      "source": "github-awesome-copilot",
+      "path": "skills/az-cost-optimize",
+      "categories": [
+        "community"
+      ],
+      "description": "az-cost-optimize skill"
+    },
+    {
+      "name": "azure-architecture-autopilot",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-architecture-autopilot",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-architecture-autopilot skill"
+    },
+    {
+      "name": "azure-deployment-preflight",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-deployment-preflight",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-deployment-preflight skill"
+    },
+    {
+      "name": "azure-devops-cli",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-devops-cli",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-devops-cli skill"
+    },
+    {
+      "name": "azure-pricing",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-pricing",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-pricing skill"
+    },
+    {
+      "name": "azure-resource-health-diagnose",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-resource-health-diagnose",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-resource-health-diagnose skill"
+    },
+    {
+      "name": "azure-resource-visualizer",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-resource-visualizer",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-resource-visualizer skill"
+    },
+    {
+      "name": "azure-role-selector",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-role-selector",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-role-selector skill"
+    },
+    {
+      "name": "azure-static-web-apps",
+      "source": "github-awesome-copilot",
+      "path": "skills/azure-static-web-apps",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-static-web-apps skill"
+    },
+    {
+      "name": "bigquery-pipeline-audit",
+      "source": "github-awesome-copilot",
+      "path": "skills/bigquery-pipeline-audit",
+      "categories": [
+        "community"
+      ],
+      "description": "bigquery-pipeline-audit skill"
+    },
+    {
+      "name": "boost-prompt",
+      "source": "github-awesome-copilot",
+      "path": "skills/boost-prompt",
+      "categories": [
+        "community"
+      ],
+      "description": "boost-prompt skill"
+    },
+    {
+      "name": "breakdown-epic-arch",
+      "source": "github-awesome-copilot",
+      "path": "skills/breakdown-epic-arch",
+      "categories": [
+        "community"
+      ],
+      "description": "breakdown-epic-arch skill"
+    },
+    {
+      "name": "breakdown-epic-pm",
+      "source": "github-awesome-copilot",
+      "path": "skills/breakdown-epic-pm",
+      "categories": [
+        "community"
+      ],
+      "description": "breakdown-epic-pm skill"
+    },
+    {
+      "name": "breakdown-feature-implementation",
+      "source": "github-awesome-copilot",
+      "path": "skills/breakdown-feature-implementation",
+      "categories": [
+        "community"
+      ],
+      "description": "breakdown-feature-implementation skill"
+    },
+    {
+      "name": "breakdown-feature-prd",
+      "source": "github-awesome-copilot",
+      "path": "skills/breakdown-feature-prd",
+      "categories": [
+        "community"
+      ],
+      "description": "breakdown-feature-prd skill"
+    },
+    {
+      "name": "breakdown-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/breakdown-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "breakdown-plan skill"
+    },
+    {
+      "name": "breakdown-test",
+      "source": "github-awesome-copilot",
+      "path": "skills/breakdown-test",
+      "categories": [
+        "community"
+      ],
+      "description": "breakdown-test skill"
+    },
+    {
+      "name": "centos-linux-triage",
+      "source": "github-awesome-copilot",
+      "path": "skills/centos-linux-triage",
+      "categories": [
+        "community"
+      ],
+      "description": "centos-linux-triage skill"
+    },
+    {
+      "name": "chrome-devtools",
+      "source": "github-awesome-copilot",
+      "path": "skills/chrome-devtools",
+      "categories": [
+        "community"
+      ],
+      "description": "chrome-devtools skill"
+    },
+    {
+      "name": "cli-mastery",
+      "source": "github-awesome-copilot",
+      "path": "skills/cli-mastery",
+      "categories": [
+        "community"
+      ],
+      "description": "cli-mastery skill"
+    },
+    {
+      "name": "cloud-design-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/cloud-design-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "cloud-design-patterns skill"
+    },
+    {
+      "name": "code-exemplars-blueprint-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/code-exemplars-blueprint-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "code-exemplars-blueprint-generator skill"
+    },
+    {
+      "name": "code-tour",
+      "source": "github-awesome-copilot",
+      "path": "skills/code-tour",
+      "categories": [
+        "community"
+      ],
+      "description": "code-tour skill"
+    },
+    {
+      "name": "codeql",
+      "source": "github-awesome-copilot",
+      "path": "skills/codeql",
+      "categories": [
+        "community"
+      ],
+      "description": "codeql skill"
+    },
+    {
+      "name": "comment-code-generate-a-tutorial",
+      "source": "github-awesome-copilot",
+      "path": "skills/comment-code-generate-a-tutorial",
+      "categories": [
+        "community"
+      ],
+      "description": "comment-code-generate-a-tutorial skill"
+    },
+    {
+      "name": "containerize-aspnet-framework",
+      "source": "github-awesome-copilot",
+      "path": "skills/containerize-aspnet-framework",
+      "categories": [
+        "community"
+      ],
+      "description": "containerize-aspnet-framework skill"
+    },
+    {
+      "name": "containerize-aspnetcore",
+      "source": "github-awesome-copilot",
+      "path": "skills/containerize-aspnetcore",
+      "categories": [
+        "community"
+      ],
+      "description": "containerize-aspnetcore skill"
+    },
+    {
+      "name": "context-map",
+      "source": "github-awesome-copilot",
+      "path": "skills/context-map",
+      "categories": [
+        "community"
+      ],
+      "description": "context-map skill"
+    },
+    {
+      "name": "conventional-commit",
+      "source": "github-awesome-copilot",
+      "path": "skills/conventional-commit",
+      "categories": [
+        "community"
+      ],
+      "description": "conventional-commit skill"
+    },
+    {
+      "name": "convert-plaintext-to-md",
+      "source": "github-awesome-copilot",
+      "path": "skills/convert-plaintext-to-md",
+      "categories": [
+        "community"
+      ],
+      "description": "convert-plaintext-to-md skill"
+    },
+    {
+      "name": "copilot-cli-quickstart",
+      "source": "github-awesome-copilot",
+      "path": "skills/copilot-cli-quickstart",
+      "categories": [
+        "community"
+      ],
+      "description": "copilot-cli-quickstart skill"
+    },
+    {
+      "name": "copilot-instructions-blueprint-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/copilot-instructions-blueprint-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "copilot-instructions-blueprint-generator skill"
+    },
+    {
+      "name": "copilot-sdk",
+      "source": "github-awesome-copilot",
+      "path": "skills/copilot-sdk",
+      "categories": [
+        "community"
+      ],
+      "description": "copilot-sdk skill"
+    },
+    {
+      "name": "copilot-spaces",
+      "source": "github-awesome-copilot",
+      "path": "skills/copilot-spaces",
+      "categories": [
+        "community"
+      ],
+      "description": "copilot-spaces skill"
+    },
+    {
+      "name": "copilot-usage-metrics",
+      "source": "github-awesome-copilot",
+      "path": "skills/copilot-usage-metrics",
+      "categories": [
+        "community"
+      ],
+      "description": "copilot-usage-metrics skill"
+    },
+    {
+      "name": "cosmosdb-datamodeling",
+      "source": "github-awesome-copilot",
+      "path": "skills/cosmosdb-datamodeling",
+      "categories": [
+        "community"
+      ],
+      "description": "cosmosdb-datamodeling skill"
+    },
+    {
+      "name": "create-agentsmd",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-agentsmd",
+      "categories": [
+        "community"
+      ],
+      "description": "create-agentsmd skill"
+    },
+    {
+      "name": "create-architectural-decision-record",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-architectural-decision-record",
+      "categories": [
+        "community"
+      ],
+      "description": "create-architectural-decision-record skill"
+    },
+    {
+      "name": "create-github-action-workflow-specification",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-github-action-workflow-specification",
+      "categories": [
+        "community"
+      ],
+      "description": "create-github-action-workflow-specification skill"
+    },
+    {
+      "name": "create-github-issue-feature-from-specification",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-github-issue-feature-from-specification",
+      "categories": [
+        "community"
+      ],
+      "description": "create-github-issue-feature-from-specification skill"
+    },
+    {
+      "name": "create-github-issues-feature-from-implementation-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-github-issues-feature-from-implementation-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "create-github-issues-feature-from-implementation-plan skill"
+    },
+    {
+      "name": "create-github-issues-for-unmet-specification-requirements",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-github-issues-for-unmet-specification-requirements",
+      "categories": [
+        "community"
+      ],
+      "description": "create-github-issues-for-unmet-specification-requirements skill"
+    },
+    {
+      "name": "create-github-pull-request-from-specification",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-github-pull-request-from-specification",
+      "categories": [
+        "community"
+      ],
+      "description": "create-github-pull-request-from-specification skill"
+    },
+    {
+      "name": "create-implementation-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-implementation-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "create-implementation-plan skill"
+    },
+    {
+      "name": "create-llms",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-llms",
+      "categories": [
+        "community"
+      ],
+      "description": "create-llms skill"
+    },
+    {
+      "name": "create-readme",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-readme",
+      "categories": [
+        "community"
+      ],
+      "description": "create-readme skill"
+    },
+    {
+      "name": "create-specification",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-specification",
+      "categories": [
+        "community"
+      ],
+      "description": "create-specification skill"
+    },
+    {
+      "name": "create-spring-boot-java-project",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-spring-boot-java-project",
+      "categories": [
+        "community"
+      ],
+      "description": "create-spring-boot-java-project skill"
+    },
+    {
+      "name": "create-spring-boot-kotlin-project",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-spring-boot-kotlin-project",
+      "categories": [
+        "community"
+      ],
+      "description": "create-spring-boot-kotlin-project skill"
+    },
+    {
+      "name": "create-technical-spike",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-technical-spike",
+      "categories": [
+        "community"
+      ],
+      "description": "create-technical-spike skill"
+    },
+    {
+      "name": "create-tldr-page",
+      "source": "github-awesome-copilot",
+      "path": "skills/create-tldr-page",
+      "categories": [
+        "community"
+      ],
+      "description": "create-tldr-page skill"
+    },
+    {
+      "name": "creating-oracle-to-postgres-master-migration-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/creating-oracle-to-postgres-master-migration-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "creating-oracle-to-postgres-master-migration-plan skill"
+    },
+    {
+      "name": "creating-oracle-to-postgres-migration-bug-report",
+      "source": "github-awesome-copilot",
+      "path": "skills/creating-oracle-to-postgres-migration-bug-report",
+      "categories": [
+        "community"
+      ],
+      "description": "creating-oracle-to-postgres-migration-bug-report skill"
+    },
+    {
+      "name": "creating-oracle-to-postgres-migration-integration-tests",
+      "source": "github-awesome-copilot",
+      "path": "skills/creating-oracle-to-postgres-migration-integration-tests",
+      "categories": [
+        "community"
+      ],
+      "description": "creating-oracle-to-postgres-migration-integration-tests skill"
+    },
+    {
+      "name": "csharp-async",
+      "source": "github-awesome-copilot",
+      "path": "skills/csharp-async",
+      "categories": [
+        "community"
+      ],
+      "description": "csharp-async skill"
+    },
+    {
+      "name": "csharp-docs",
+      "source": "github-awesome-copilot",
+      "path": "skills/csharp-docs",
+      "categories": [
+        "community"
+      ],
+      "description": "csharp-docs skill"
+    },
+    {
+      "name": "csharp-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/csharp-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "csharp-mcp-server-generator skill"
+    },
+    {
+      "name": "csharp-mstest",
+      "source": "github-awesome-copilot",
+      "path": "skills/csharp-mstest",
+      "categories": [
+        "community"
+      ],
+      "description": "csharp-mstest skill"
+    },
+    {
+      "name": "csharp-nunit",
+      "source": "github-awesome-copilot",
+      "path": "skills/csharp-nunit",
+      "categories": [
+        "community"
+      ],
+      "description": "csharp-nunit skill"
+    },
+    {
+      "name": "csharp-tunit",
+      "source": "github-awesome-copilot",
+      "path": "skills/csharp-tunit",
+      "categories": [
+        "community"
+      ],
+      "description": "csharp-tunit skill"
+    },
+    {
+      "name": "csharp-xunit",
+      "source": "github-awesome-copilot",
+      "path": "skills/csharp-xunit",
+      "categories": [
+        "community"
+      ],
+      "description": "csharp-xunit skill"
+    },
+    {
+      "name": "daily-prep",
+      "source": "github-awesome-copilot",
+      "path": "skills/daily-prep",
+      "categories": [
+        "community"
+      ],
+      "description": "daily-prep skill"
+    },
+    {
+      "name": "datanalysis-credit-risk",
+      "source": "github-awesome-copilot",
+      "path": "skills/datanalysis-credit-risk",
+      "categories": [
+        "community"
+      ],
+      "description": "datanalysis-credit-risk skill"
+    },
+    {
+      "name": "dataverse-python-advanced-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/dataverse-python-advanced-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "dataverse-python-advanced-patterns skill"
+    },
+    {
+      "name": "dataverse-python-production-code",
+      "source": "github-awesome-copilot",
+      "path": "skills/dataverse-python-production-code",
+      "categories": [
+        "community"
+      ],
+      "description": "dataverse-python-production-code skill"
+    },
+    {
+      "name": "dataverse-python-quickstart",
+      "source": "github-awesome-copilot",
+      "path": "skills/dataverse-python-quickstart",
+      "categories": [
+        "community"
+      ],
+      "description": "dataverse-python-quickstart skill"
+    },
+    {
+      "name": "dataverse-python-usecase-builder",
+      "source": "github-awesome-copilot",
+      "path": "skills/dataverse-python-usecase-builder",
+      "categories": [
+        "community"
+      ],
+      "description": "dataverse-python-usecase-builder skill"
+    },
+    {
+      "name": "debian-linux-triage",
+      "source": "github-awesome-copilot",
+      "path": "skills/debian-linux-triage",
+      "categories": [
+        "community"
+      ],
+      "description": "debian-linux-triage skill"
+    },
+    {
+      "name": "declarative-agents",
+      "source": "github-awesome-copilot",
+      "path": "skills/declarative-agents",
+      "categories": [
+        "community"
+      ],
+      "description": "declarative-agents skill"
+    },
+    {
+      "name": "dependabot",
+      "source": "github-awesome-copilot",
+      "path": "skills/dependabot",
+      "categories": [
+        "community"
+      ],
+      "description": "dependabot skill"
+    },
+    {
+      "name": "devops-rollout-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/devops-rollout-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "devops-rollout-plan skill"
+    },
+    {
+      "name": "documentation-writer",
+      "source": "github-awesome-copilot",
+      "path": "skills/documentation-writer",
+      "categories": [
+        "community"
+      ],
+      "description": "documentation-writer skill"
+    },
+    {
+      "name": "dotnet-best-practices",
+      "source": "github-awesome-copilot",
+      "path": "skills/dotnet-best-practices",
+      "categories": [
+        "community"
+      ],
+      "description": "dotnet-best-practices skill"
+    },
+    {
+      "name": "dotnet-design-pattern-review",
+      "source": "github-awesome-copilot",
+      "path": "skills/dotnet-design-pattern-review",
+      "categories": [
+        "community"
+      ],
+      "description": "dotnet-design-pattern-review skill"
+    },
+    {
+      "name": "dotnet-timezone",
+      "source": "github-awesome-copilot",
+      "path": "skills/dotnet-timezone",
+      "categories": [
+        "community"
+      ],
+      "description": "dotnet-timezone skill"
+    },
+    {
+      "name": "dotnet-upgrade",
+      "source": "github-awesome-copilot",
+      "path": "skills/dotnet-upgrade",
+      "categories": [
+        "community"
+      ],
+      "description": "dotnet-upgrade skill"
+    },
+    {
+      "name": "doublecheck",
+      "source": "github-awesome-copilot",
+      "path": "skills/doublecheck",
+      "categories": [
+        "community"
+      ],
+      "description": "doublecheck skill"
+    },
+    {
+      "name": "draw-io-diagram-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/draw-io-diagram-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "draw-io-diagram-generator skill"
+    },
+    {
+      "name": "editorconfig",
+      "source": "github-awesome-copilot",
+      "path": "skills/editorconfig",
+      "categories": [
+        "community"
+      ],
+      "description": "editorconfig skill"
+    },
+    {
+      "name": "ef-core",
+      "source": "github-awesome-copilot",
+      "path": "skills/ef-core",
+      "categories": [
+        "community"
+      ],
+      "description": "ef-core skill"
+    },
+    {
+      "name": "email-drafter",
+      "source": "github-awesome-copilot",
+      "path": "skills/email-drafter",
+      "categories": [
+        "community"
+      ],
+      "description": "email-drafter skill"
+    },
+    {
+      "name": "entra-agent-user",
+      "source": "github-awesome-copilot",
+      "path": "skills/entra-agent-user",
+      "categories": [
+        "community"
+      ],
+      "description": "entra-agent-user skill"
+    },
+    {
+      "name": "eval-driven-dev",
+      "source": "github-awesome-copilot",
+      "path": "skills/eval-driven-dev",
+      "categories": [
+        "community"
+      ],
+      "description": "eval-driven-dev skill"
+    },
+    {
+      "name": "excalidraw-diagram-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/excalidraw-diagram-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "excalidraw-diagram-generator skill"
+    },
+    {
+      "name": "fabric-lakehouse",
+      "source": "github-awesome-copilot",
+      "path": "skills/fabric-lakehouse",
+      "categories": [
+        "community"
+      ],
+      "description": "fabric-lakehouse skill"
+    },
+    {
+      "name": "fedora-linux-triage",
+      "source": "github-awesome-copilot",
+      "path": "skills/fedora-linux-triage",
+      "categories": [
+        "community"
+      ],
+      "description": "fedora-linux-triage skill"
+    },
+    {
+      "name": "finalize-agent-prompt",
+      "source": "github-awesome-copilot",
+      "path": "skills/finalize-agent-prompt",
+      "categories": [
+        "community"
+      ],
+      "description": "finalize-agent-prompt skill"
+    },
+    {
+      "name": "finnish-humanizer",
+      "source": "github-awesome-copilot",
+      "path": "skills/finnish-humanizer",
+      "categories": [
+        "community"
+      ],
+      "description": "finnish-humanizer skill"
+    },
+    {
+      "name": "first-ask",
+      "source": "github-awesome-copilot",
+      "path": "skills/first-ask",
+      "categories": [
+        "community"
+      ],
+      "description": "first-ask skill"
+    },
+    {
+      "name": "flowstudio-power-automate-build",
+      "source": "github-awesome-copilot",
+      "path": "skills/flowstudio-power-automate-build",
+      "categories": [
+        "community"
+      ],
+      "description": "flowstudio-power-automate-build skill"
+    },
+    {
+      "name": "flowstudio-power-automate-debug",
+      "source": "github-awesome-copilot",
+      "path": "skills/flowstudio-power-automate-debug",
+      "categories": [
+        "community"
+      ],
+      "description": "flowstudio-power-automate-debug skill"
+    },
+    {
+      "name": "flowstudio-power-automate-governance",
+      "source": "github-awesome-copilot",
+      "path": "skills/flowstudio-power-automate-governance",
+      "categories": [
+        "community"
+      ],
+      "description": "flowstudio-power-automate-governance skill"
+    },
+    {
+      "name": "flowstudio-power-automate-mcp",
+      "source": "github-awesome-copilot",
+      "path": "skills/flowstudio-power-automate-mcp",
+      "categories": [
+        "community"
+      ],
+      "description": "flowstudio-power-automate-mcp skill"
+    },
+    {
+      "name": "flowstudio-power-automate-monitoring",
+      "source": "github-awesome-copilot",
+      "path": "skills/flowstudio-power-automate-monitoring",
+      "categories": [
+        "community"
+      ],
+      "description": "flowstudio-power-automate-monitoring skill"
+    },
+    {
+      "name": "fluentui-blazor",
+      "source": "github-awesome-copilot",
+      "path": "skills/fluentui-blazor",
+      "categories": [
+        "community"
+      ],
+      "description": "fluentui-blazor skill"
+    },
+    {
+      "name": "folder-structure-blueprint-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/folder-structure-blueprint-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "folder-structure-blueprint-generator skill"
+    },
+    {
+      "name": "foundry-agent-sync",
+      "source": "github-awesome-copilot",
+      "path": "skills/foundry-agent-sync",
+      "categories": [
+        "community"
+      ],
+      "description": "foundry-agent-sync skill"
+    },
+    {
+      "name": "freecad-scripts",
+      "source": "github-awesome-copilot",
+      "path": "skills/freecad-scripts",
+      "categories": [
+        "community"
+      ],
+      "description": "freecad-scripts skill"
+    },
+    {
+      "name": "from-the-other-side-vega",
+      "source": "github-awesome-copilot",
+      "path": "skills/from-the-other-side-vega",
+      "categories": [
+        "community"
+      ],
+      "description": "from-the-other-side-vega skill"
+    },
+    {
+      "name": "game-engine",
+      "source": "github-awesome-copilot",
+      "path": "skills/game-engine",
+      "categories": [
+        "community"
+      ],
+      "description": "game-engine skill"
+    },
+    {
+      "name": "gdpr-compliant",
+      "source": "github-awesome-copilot",
+      "path": "skills/gdpr-compliant",
+      "categories": [
+        "community"
+      ],
+      "description": "gdpr-compliant skill"
+    },
+    {
+      "name": "gen-specs-as-issues",
+      "source": "github-awesome-copilot",
+      "path": "skills/gen-specs-as-issues",
+      "categories": [
+        "community"
+      ],
+      "description": "gen-specs-as-issues skill"
+    },
+    {
+      "name": "generate-custom-instructions-from-codebase",
+      "source": "github-awesome-copilot",
+      "path": "skills/generate-custom-instructions-from-codebase",
+      "categories": [
+        "community"
+      ],
+      "description": "generate-custom-instructions-from-codebase skill"
+    },
+    {
+      "name": "geofeed-tuner",
+      "source": "github-awesome-copilot",
+      "path": "skills/geofeed-tuner",
+      "categories": [
+        "community"
+      ],
+      "description": "geofeed-tuner skill"
+    },
+    {
+      "name": "gh-cli",
+      "source": "github-awesome-copilot",
+      "path": "skills/gh-cli",
+      "categories": [
+        "community"
+      ],
+      "description": "gh-cli skill"
+    },
+    {
+      "name": "git-commit",
+      "source": "github-awesome-copilot",
+      "path": "skills/git-commit",
+      "categories": [
+        "community"
+      ],
+      "description": "git-commit skill"
+    },
+    {
+      "name": "git-flow-branch-creator",
+      "source": "github-awesome-copilot",
+      "path": "skills/git-flow-branch-creator",
+      "categories": [
+        "community"
+      ],
+      "description": "git-flow-branch-creator skill"
+    },
+    {
+      "name": "github-copilot-starter",
+      "source": "github-awesome-copilot",
+      "path": "skills/github-copilot-starter",
+      "categories": [
+        "community"
+      ],
+      "description": "github-copilot-starter skill"
+    },
+    {
+      "name": "github-issues",
+      "source": "github-awesome-copilot",
+      "path": "skills/github-issues",
+      "categories": [
+        "community"
+      ],
+      "description": "github-issues skill"
+    },
+    {
+      "name": "go-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/go-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "go-mcp-server-generator skill"
+    },
+    {
+      "name": "gsap-framer-scroll-animation",
+      "source": "github-awesome-copilot",
+      "path": "skills/gsap-framer-scroll-animation",
+      "categories": [
+        "community"
+      ],
+      "description": "gsap-framer-scroll-animation skill"
+    },
+    {
+      "name": "gtm-0-to-1-launch",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-0-to-1-launch",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-0-to-1-launch skill"
+    },
+    {
+      "name": "gtm-ai-gtm",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-ai-gtm",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-ai-gtm skill"
+    },
+    {
+      "name": "gtm-board-and-investor-communication",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-board-and-investor-communication",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-board-and-investor-communication skill"
+    },
+    {
+      "name": "gtm-developer-ecosystem",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-developer-ecosystem",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-developer-ecosystem skill"
+    },
+    {
+      "name": "gtm-enterprise-account-planning",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-enterprise-account-planning",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-enterprise-account-planning skill"
+    },
+    {
+      "name": "gtm-enterprise-onboarding",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-enterprise-onboarding",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-enterprise-onboarding skill"
+    },
+    {
+      "name": "gtm-operating-cadence",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-operating-cadence",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-operating-cadence skill"
+    },
+    {
+      "name": "gtm-partnership-architecture",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-partnership-architecture",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-partnership-architecture skill"
+    },
+    {
+      "name": "gtm-positioning-strategy",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-positioning-strategy",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-positioning-strategy skill"
+    },
+    {
+      "name": "gtm-product-led-growth",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-product-led-growth",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-product-led-growth skill"
+    },
+    {
+      "name": "gtm-technical-product-pricing",
+      "source": "github-awesome-copilot",
+      "path": "skills/gtm-technical-product-pricing",
+      "categories": [
+        "community"
+      ],
+      "description": "gtm-technical-product-pricing skill"
+    },
+    {
+      "name": "image-manipulation-image-magick",
+      "source": "github-awesome-copilot",
+      "path": "skills/image-manipulation-image-magick",
+      "categories": [
+        "community"
+      ],
+      "description": "image-manipulation-image-magick skill"
+    },
+    {
+      "name": "import-infrastructure-as-code",
+      "source": "github-awesome-copilot",
+      "path": "skills/import-infrastructure-as-code",
+      "categories": [
+        "community"
+      ],
+      "description": "import-infrastructure-as-code skill"
+    },
+    {
+      "name": "integrate-context-matic",
+      "source": "github-awesome-copilot",
+      "path": "skills/integrate-context-matic",
+      "categories": [
+        "community"
+      ],
+      "description": "integrate-context-matic skill"
+    },
+    {
+      "name": "issue-fields-migration",
+      "source": "github-awesome-copilot",
+      "path": "skills/issue-fields-migration",
+      "categories": [
+        "community"
+      ],
+      "description": "issue-fields-migration skill"
+    },
+    {
+      "name": "java-add-graalvm-native-image-support",
+      "source": "github-awesome-copilot",
+      "path": "skills/java-add-graalvm-native-image-support",
+      "categories": [
+        "community"
+      ],
+      "description": "java-add-graalvm-native-image-support skill"
+    },
+    {
+      "name": "java-docs",
+      "source": "github-awesome-copilot",
+      "path": "skills/java-docs",
+      "categories": [
+        "community"
+      ],
+      "description": "java-docs skill"
+    },
+    {
+      "name": "java-junit",
+      "source": "github-awesome-copilot",
+      "path": "skills/java-junit",
+      "categories": [
+        "community"
+      ],
+      "description": "java-junit skill"
+    },
+    {
+      "name": "java-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/java-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "java-mcp-server-generator skill"
+    },
+    {
+      "name": "java-refactoring-extract-method",
+      "source": "github-awesome-copilot",
+      "path": "skills/java-refactoring-extract-method",
+      "categories": [
+        "community"
+      ],
+      "description": "java-refactoring-extract-method skill"
+    },
+    {
+      "name": "java-refactoring-remove-parameter",
+      "source": "github-awesome-copilot",
+      "path": "skills/java-refactoring-remove-parameter",
+      "categories": [
+        "community"
+      ],
+      "description": "java-refactoring-remove-parameter skill"
+    },
+    {
+      "name": "java-springboot",
+      "source": "github-awesome-copilot",
+      "path": "skills/java-springboot",
+      "categories": [
+        "community"
+      ],
+      "description": "java-springboot skill"
+    },
+    {
+      "name": "javascript-typescript-jest",
+      "source": "github-awesome-copilot",
+      "path": "skills/javascript-typescript-jest",
+      "categories": [
+        "community"
+      ],
+      "description": "javascript-typescript-jest skill"
+    },
+    {
+      "name": "kotlin-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/kotlin-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "kotlin-mcp-server-generator skill"
+    },
+    {
+      "name": "kotlin-springboot",
+      "source": "github-awesome-copilot",
+      "path": "skills/kotlin-springboot",
+      "categories": [
+        "community"
+      ],
+      "description": "kotlin-springboot skill"
+    },
+    {
+      "name": "legacy-circuit-mockups",
+      "source": "github-awesome-copilot",
+      "path": "skills/legacy-circuit-mockups",
+      "categories": [
+        "community"
+      ],
+      "description": "legacy-circuit-mockups skill"
+    },
+    {
+      "name": "linkedin-post-formatter",
+      "source": "github-awesome-copilot",
+      "path": "skills/linkedin-post-formatter",
+      "categories": [
+        "community"
+      ],
+      "description": "linkedin-post-formatter skill"
+    },
+    {
+      "name": "lsp-setup",
+      "source": "github-awesome-copilot",
+      "path": "skills/lsp-setup",
+      "categories": [
+        "community"
+      ],
+      "description": "lsp-setup skill"
+    },
+    {
+      "name": "make-repo-contribution",
+      "source": "github-awesome-copilot",
+      "path": "skills/make-repo-contribution",
+      "categories": [
+        "community"
+      ],
+      "description": "make-repo-contribution skill"
+    },
+    {
+      "name": "make-skill-template",
+      "source": "github-awesome-copilot",
+      "path": "skills/make-skill-template",
+      "categories": [
+        "community"
+      ],
+      "description": "make-skill-template skill"
+    },
+    {
+      "name": "markdown-to-html",
+      "source": "github-awesome-copilot",
+      "path": "skills/markdown-to-html",
+      "categories": [
+        "community"
+      ],
+      "description": "markdown-to-html skill"
+    },
+    {
+      "name": "mcp-cli",
+      "source": "github-awesome-copilot",
+      "path": "skills/mcp-cli",
+      "categories": [
+        "community"
+      ],
+      "description": "mcp-cli skill"
+    },
+    {
+      "name": "mcp-copilot-studio-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/mcp-copilot-studio-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "mcp-copilot-studio-server-generator skill"
+    },
+    {
+      "name": "mcp-create-adaptive-cards",
+      "source": "github-awesome-copilot",
+      "path": "skills/mcp-create-adaptive-cards",
+      "categories": [
+        "community"
+      ],
+      "description": "mcp-create-adaptive-cards skill"
+    },
+    {
+      "name": "mcp-create-declarative-agent",
+      "source": "github-awesome-copilot",
+      "path": "skills/mcp-create-declarative-agent",
+      "categories": [
+        "community"
+      ],
+      "description": "mcp-create-declarative-agent skill"
+    },
+    {
+      "name": "mcp-deploy-manage-agents",
+      "source": "github-awesome-copilot",
+      "path": "skills/mcp-deploy-manage-agents",
+      "categories": [
+        "community"
+      ],
+      "description": "mcp-deploy-manage-agents skill"
+    },
+    {
+      "name": "mcp-security-audit",
+      "source": "github-awesome-copilot",
+      "path": "skills/mcp-security-audit",
+      "categories": [
+        "community"
+      ],
+      "description": "mcp-security-audit skill"
+    },
+    {
+      "name": "meeting-minutes",
+      "source": "github-awesome-copilot",
+      "path": "skills/meeting-minutes",
+      "categories": [
+        "community"
+      ],
+      "description": "meeting-minutes skill"
+    },
+    {
+      "name": "memory-merger",
+      "source": "github-awesome-copilot",
+      "path": "skills/memory-merger",
+      "categories": [
+        "community"
+      ],
+      "description": "memory-merger skill"
+    },
+    {
+      "name": "mentoring-juniors",
+      "source": "github-awesome-copilot",
+      "path": "skills/mentoring-juniors",
+      "categories": [
+        "community"
+      ],
+      "description": "mentoring-juniors skill"
+    },
+    {
+      "name": "microsoft-agent-framework",
+      "source": "github-awesome-copilot",
+      "path": "skills/microsoft-agent-framework",
+      "categories": [
+        "community"
+      ],
+      "description": "microsoft-agent-framework skill"
+    },
+    {
+      "name": "microsoft-code-reference",
+      "source": "github-awesome-copilot",
+      "path": "skills/microsoft-code-reference",
+      "categories": [
+        "community"
+      ],
+      "description": "microsoft-code-reference skill"
+    },
+    {
+      "name": "microsoft-docs",
+      "source": "github-awesome-copilot",
+      "path": "skills/microsoft-docs",
+      "categories": [
+        "community"
+      ],
+      "description": "microsoft-docs skill"
+    },
+    {
+      "name": "microsoft-skill-creator",
+      "source": "github-awesome-copilot",
+      "path": "skills/microsoft-skill-creator",
+      "categories": [
+        "community"
+      ],
+      "description": "microsoft-skill-creator skill"
+    },
+    {
+      "name": "migrating-oracle-to-postgres-stored-procedures",
+      "source": "github-awesome-copilot",
+      "path": "skills/migrating-oracle-to-postgres-stored-procedures",
+      "categories": [
+        "community"
+      ],
+      "description": "migrating-oracle-to-postgres-stored-procedures skill"
+    },
+    {
+      "name": "mkdocs-translations",
+      "source": "github-awesome-copilot",
+      "path": "skills/mkdocs-translations",
+      "categories": [
+        "community"
+      ],
+      "description": "mkdocs-translations skill"
+    },
+    {
+      "name": "model-recommendation",
+      "source": "github-awesome-copilot",
+      "path": "skills/model-recommendation",
+      "categories": [
+        "community"
+      ],
+      "description": "model-recommendation skill"
+    },
+    {
+      "name": "msstore-cli",
+      "source": "github-awesome-copilot",
+      "path": "skills/msstore-cli",
+      "categories": [
+        "community"
+      ],
+      "description": "msstore-cli skill"
+    },
+    {
+      "name": "multi-stage-dockerfile",
+      "source": "github-awesome-copilot",
+      "path": "skills/multi-stage-dockerfile",
+      "categories": [
+        "community"
+      ],
+      "description": "multi-stage-dockerfile skill"
+    },
+    {
+      "name": "my-issues",
+      "source": "github-awesome-copilot",
+      "path": "skills/my-issues",
+      "categories": [
+        "community"
+      ],
+      "description": "my-issues skill"
+    },
+    {
+      "name": "my-pull-requests",
+      "source": "github-awesome-copilot",
+      "path": "skills/my-pull-requests",
+      "categories": [
+        "community"
+      ],
+      "description": "my-pull-requests skill"
+    },
+    {
+      "name": "nano-banana-pro-openrouter",
+      "source": "github-awesome-copilot",
+      "path": "skills/nano-banana-pro-openrouter",
+      "categories": [
+        "community"
+      ],
+      "description": "nano-banana-pro-openrouter skill"
+    },
+    {
+      "name": "napkin",
+      "source": "github-awesome-copilot",
+      "path": "skills/napkin",
+      "categories": [
+        "community"
+      ],
+      "description": "napkin skill"
+    },
+    {
+      "name": "next-intl-add-language",
+      "source": "github-awesome-copilot",
+      "path": "skills/next-intl-add-language",
+      "categories": [
+        "community"
+      ],
+      "description": "next-intl-add-language skill"
+    },
+    {
+      "name": "noob-mode",
+      "source": "github-awesome-copilot",
+      "path": "skills/noob-mode",
+      "categories": [
+        "community"
+      ],
+      "description": "noob-mode skill"
+    },
+    {
+      "name": "nuget-manager",
+      "source": "github-awesome-copilot",
+      "path": "skills/nuget-manager",
+      "categories": [
+        "community"
+      ],
+      "description": "nuget-manager skill"
+    },
+    {
+      "name": "onboard-context-matic",
+      "source": "github-awesome-copilot",
+      "path": "skills/onboard-context-matic",
+      "categories": [
+        "community"
+      ],
+      "description": "onboard-context-matic skill"
+    },
+    {
+      "name": "oo-component-documentation",
+      "source": "github-awesome-copilot",
+      "path": "skills/oo-component-documentation",
+      "categories": [
+        "community"
+      ],
+      "description": "oo-component-documentation skill"
+    },
+    {
+      "name": "openapi-to-application-code",
+      "source": "github-awesome-copilot",
+      "path": "skills/openapi-to-application-code",
+      "categories": [
+        "community"
+      ],
+      "description": "openapi-to-application-code skill"
+    },
+    {
+      "name": "pdftk-server",
+      "source": "github-awesome-copilot",
+      "path": "skills/pdftk-server",
+      "categories": [
+        "community"
+      ],
+      "description": "pdftk-server skill"
+    },
+    {
+      "name": "penpot-uiux-design",
+      "source": "github-awesome-copilot",
+      "path": "skills/penpot-uiux-design",
+      "categories": [
+        "community"
+      ],
+      "description": "penpot-uiux-design skill"
+    },
+    {
+      "name": "phoenix-cli",
+      "source": "github-awesome-copilot",
+      "path": "skills/phoenix-cli",
+      "categories": [
+        "community"
+      ],
+      "description": "phoenix-cli skill"
+    },
+    {
+      "name": "phoenix-evals",
+      "source": "github-awesome-copilot",
+      "path": "skills/phoenix-evals",
+      "categories": [
+        "community"
+      ],
+      "description": "phoenix-evals skill"
+    },
+    {
+      "name": "phoenix-tracing",
+      "source": "github-awesome-copilot",
+      "path": "skills/phoenix-tracing",
+      "categories": [
+        "community"
+      ],
+      "description": "phoenix-tracing skill"
+    },
+    {
+      "name": "php-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/php-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "php-mcp-server-generator skill"
+    },
+    {
+      "name": "planning-oracle-to-postgres-migration-integration-testing",
+      "source": "github-awesome-copilot",
+      "path": "skills/planning-oracle-to-postgres-migration-integration-testing",
+      "categories": [
+        "community"
+      ],
+      "description": "planning-oracle-to-postgres-migration-integration-testing skill"
+    },
+    {
+      "name": "plantuml-ascii",
+      "source": "github-awesome-copilot",
+      "path": "skills/plantuml-ascii",
+      "categories": [
+        "community"
+      ],
+      "description": "plantuml-ascii skill"
+    },
+    {
+      "name": "playwright-automation-fill-in-form",
+      "source": "github-awesome-copilot",
+      "path": "skills/playwright-automation-fill-in-form",
+      "categories": [
+        "community"
+      ],
+      "description": "playwright-automation-fill-in-form skill"
+    },
+    {
+      "name": "playwright-explore-website",
+      "source": "github-awesome-copilot",
+      "path": "skills/playwright-explore-website",
+      "categories": [
+        "community"
+      ],
+      "description": "playwright-explore-website skill"
+    },
+    {
+      "name": "playwright-generate-test",
+      "source": "github-awesome-copilot",
+      "path": "skills/playwright-generate-test",
+      "categories": [
+        "community"
+      ],
+      "description": "playwright-generate-test skill"
+    },
+    {
+      "name": "polyglot-test-agent",
+      "source": "github-awesome-copilot",
+      "path": "skills/polyglot-test-agent",
+      "categories": [
+        "community"
+      ],
+      "description": "polyglot-test-agent skill"
+    },
+    {
+      "name": "postgresql-code-review",
+      "source": "github-awesome-copilot",
+      "path": "skills/postgresql-code-review",
+      "categories": [
+        "community"
+      ],
+      "description": "postgresql-code-review skill"
+    },
+    {
+      "name": "postgresql-optimization",
+      "source": "github-awesome-copilot",
+      "path": "skills/postgresql-optimization",
+      "categories": [
+        "community"
+      ],
+      "description": "postgresql-optimization skill"
+    },
+    {
+      "name": "power-apps-code-app-scaffold",
+      "source": "github-awesome-copilot",
+      "path": "skills/power-apps-code-app-scaffold",
+      "categories": [
+        "community"
+      ],
+      "description": "power-apps-code-app-scaffold skill"
+    },
+    {
+      "name": "power-bi-dax-optimization",
+      "source": "github-awesome-copilot",
+      "path": "skills/power-bi-dax-optimization",
+      "categories": [
+        "community"
+      ],
+      "description": "power-bi-dax-optimization skill"
+    },
+    {
+      "name": "power-bi-model-design-review",
+      "source": "github-awesome-copilot",
+      "path": "skills/power-bi-model-design-review",
+      "categories": [
+        "community"
+      ],
+      "description": "power-bi-model-design-review skill"
+    },
+    {
+      "name": "power-bi-performance-troubleshooting",
+      "source": "github-awesome-copilot",
+      "path": "skills/power-bi-performance-troubleshooting",
+      "categories": [
+        "community"
+      ],
+      "description": "power-bi-performance-troubleshooting skill"
+    },
+    {
+      "name": "power-bi-report-design-consultation",
+      "source": "github-awesome-copilot",
+      "path": "skills/power-bi-report-design-consultation",
+      "categories": [
+        "community"
+      ],
+      "description": "power-bi-report-design-consultation skill"
+    },
+    {
+      "name": "power-platform-architect",
+      "source": "github-awesome-copilot",
+      "path": "skills/power-platform-architect",
+      "categories": [
+        "community"
+      ],
+      "description": "power-platform-architect skill"
+    },
+    {
+      "name": "power-platform-mcp-connector-suite",
+      "source": "github-awesome-copilot",
+      "path": "skills/power-platform-mcp-connector-suite",
+      "categories": [
+        "community"
+      ],
+      "description": "power-platform-mcp-connector-suite skill"
+    },
+    {
+      "name": "powerbi-modeling",
+      "source": "github-awesome-copilot",
+      "path": "skills/powerbi-modeling",
+      "categories": [
+        "community"
+      ],
+      "description": "powerbi-modeling skill"
+    },
+    {
+      "name": "prd",
+      "source": "github-awesome-copilot",
+      "path": "skills/prd",
+      "categories": [
+        "community"
+      ],
+      "description": "prd skill"
+    },
+    {
+      "name": "premium-frontend-ui",
+      "source": "github-awesome-copilot",
+      "path": "skills/premium-frontend-ui",
+      "categories": [
+        "community"
+      ],
+      "description": "premium-frontend-ui skill"
+    },
+    {
+      "name": "project-workflow-analysis-blueprint-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/project-workflow-analysis-blueprint-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "project-workflow-analysis-blueprint-generator skill"
+    },
+    {
+      "name": "prompt-builder",
+      "source": "github-awesome-copilot",
+      "path": "skills/prompt-builder",
+      "categories": [
+        "community"
+      ],
+      "description": "prompt-builder skill"
+    },
+    {
+      "name": "publish-to-pages",
+      "source": "github-awesome-copilot",
+      "path": "skills/publish-to-pages",
+      "categories": [
+        "community"
+      ],
+      "description": "publish-to-pages skill"
+    },
+    {
+      "name": "pytest-coverage",
+      "source": "github-awesome-copilot",
+      "path": "skills/pytest-coverage",
+      "categories": [
+        "community"
+      ],
+      "description": "pytest-coverage skill"
+    },
+    {
+      "name": "python-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/python-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "python-mcp-server-generator skill"
+    },
+    {
+      "name": "python-pypi-package-builder",
+      "source": "github-awesome-copilot",
+      "path": "skills/python-pypi-package-builder",
+      "categories": [
+        "community"
+      ],
+      "description": "python-pypi-package-builder skill"
+    },
+    {
+      "name": "qdrant-clients-sdk",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-clients-sdk",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-clients-sdk skill"
+    },
+    {
+      "name": "qdrant-deployment-options",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-deployment-options",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-deployment-options skill"
+    },
+    {
+      "name": "qdrant-model-migration",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-model-migration",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-model-migration skill"
+    },
+    {
+      "name": "qdrant-monitoring",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-monitoring",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-monitoring skill"
+    },
+    {
+      "name": "qdrant-performance-optimization",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-performance-optimization",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-performance-optimization skill"
+    },
+    {
+      "name": "qdrant-scaling",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-scaling",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-scaling skill"
+    },
+    {
+      "name": "qdrant-search-quality",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-search-quality",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-search-quality skill"
+    },
+    {
+      "name": "qdrant-version-upgrade",
+      "source": "github-awesome-copilot",
+      "path": "skills/qdrant-version-upgrade",
+      "categories": [
+        "community"
+      ],
+      "description": "qdrant-version-upgrade skill"
+    },
+    {
+      "name": "quality-playbook",
+      "source": "github-awesome-copilot",
+      "path": "skills/quality-playbook",
+      "categories": [
+        "community"
+      ],
+      "description": "quality-playbook skill"
+    },
+    {
+      "name": "quasi-coder",
+      "source": "github-awesome-copilot",
+      "path": "skills/quasi-coder",
+      "categories": [
+        "community"
+      ],
+      "description": "quasi-coder skill"
+    },
+    {
+      "name": "react-audit-grep-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/react-audit-grep-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "react-audit-grep-patterns skill"
+    },
+    {
+      "name": "react18-batching-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/react18-batching-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "react18-batching-patterns skill"
+    },
+    {
+      "name": "react18-dep-compatibility",
+      "source": "github-awesome-copilot",
+      "path": "skills/react18-dep-compatibility",
+      "categories": [
+        "community"
+      ],
+      "description": "react18-dep-compatibility skill"
+    },
+    {
+      "name": "react18-enzyme-to-rtl",
+      "source": "github-awesome-copilot",
+      "path": "skills/react18-enzyme-to-rtl",
+      "categories": [
+        "community"
+      ],
+      "description": "react18-enzyme-to-rtl skill"
+    },
+    {
+      "name": "react18-legacy-context",
+      "source": "github-awesome-copilot",
+      "path": "skills/react18-legacy-context",
+      "categories": [
+        "community"
+      ],
+      "description": "react18-legacy-context skill"
+    },
+    {
+      "name": "react18-lifecycle-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/react18-lifecycle-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "react18-lifecycle-patterns skill"
+    },
+    {
+      "name": "react18-string-refs",
+      "source": "github-awesome-copilot",
+      "path": "skills/react18-string-refs",
+      "categories": [
+        "community"
+      ],
+      "description": "react18-string-refs skill"
+    },
+    {
+      "name": "react19-concurrent-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/react19-concurrent-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "react19-concurrent-patterns skill"
+    },
+    {
+      "name": "react19-source-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/react19-source-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "react19-source-patterns skill"
+    },
+    {
+      "name": "react19-test-patterns",
+      "source": "github-awesome-copilot",
+      "path": "skills/react19-test-patterns",
+      "categories": [
+        "community"
+      ],
+      "description": "react19-test-patterns skill"
+    },
+    {
+      "name": "readme-blueprint-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/readme-blueprint-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "readme-blueprint-generator skill"
+    },
+    {
+      "name": "refactor-method-complexity-reduce",
+      "source": "github-awesome-copilot",
+      "path": "skills/refactor-method-complexity-reduce",
+      "categories": [
+        "community"
+      ],
+      "description": "refactor-method-complexity-reduce skill"
+    },
+    {
+      "name": "refactor-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/refactor-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "refactor-plan skill"
+    },
+    {
+      "name": "refactor",
+      "source": "github-awesome-copilot",
+      "path": "skills/refactor",
+      "categories": [
+        "community"
+      ],
+      "description": "refactor skill"
+    },
+    {
+      "name": "remember-interactive-programming",
+      "source": "github-awesome-copilot",
+      "path": "skills/remember-interactive-programming",
+      "categories": [
+        "community"
+      ],
+      "description": "remember-interactive-programming skill"
+    },
+    {
+      "name": "remember",
+      "source": "github-awesome-copilot",
+      "path": "skills/remember",
+      "categories": [
+        "community"
+      ],
+      "description": "remember skill"
+    },
+    {
+      "name": "repo-story-time",
+      "source": "github-awesome-copilot",
+      "path": "skills/repo-story-time",
+      "categories": [
+        "community"
+      ],
+      "description": "repo-story-time skill"
+    },
+    {
+      "name": "review-and-refactor",
+      "source": "github-awesome-copilot",
+      "path": "skills/review-and-refactor",
+      "categories": [
+        "community"
+      ],
+      "description": "review-and-refactor skill"
+    },
+    {
+      "name": "reviewing-oracle-to-postgres-migration",
+      "source": "github-awesome-copilot",
+      "path": "skills/reviewing-oracle-to-postgres-migration",
+      "categories": [
+        "community"
+      ],
+      "description": "reviewing-oracle-to-postgres-migration skill"
+    },
+    {
+      "name": "roundup-setup",
+      "source": "github-awesome-copilot",
+      "path": "skills/roundup-setup",
+      "categories": [
+        "community"
+      ],
+      "description": "roundup-setup skill"
+    },
+    {
+      "name": "roundup",
+      "source": "github-awesome-copilot",
+      "path": "skills/roundup",
+      "categories": [
+        "community"
+      ],
+      "description": "roundup skill"
+    },
+    {
+      "name": "ruby-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/ruby-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "ruby-mcp-server-generator skill"
+    },
+    {
+      "name": "ruff-recursive-fix",
+      "source": "github-awesome-copilot",
+      "path": "skills/ruff-recursive-fix",
+      "categories": [
+        "community"
+      ],
+      "description": "ruff-recursive-fix skill"
+    },
+    {
+      "name": "rust-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/rust-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "rust-mcp-server-generator skill"
+    },
+    {
+      "name": "salesforce-apex-quality",
+      "source": "github-awesome-copilot",
+      "path": "skills/salesforce-apex-quality",
+      "categories": [
+        "community"
+      ],
+      "description": "salesforce-apex-quality skill"
+    },
+    {
+      "name": "salesforce-component-standards",
+      "source": "github-awesome-copilot",
+      "path": "skills/salesforce-component-standards",
+      "categories": [
+        "community"
+      ],
+      "description": "salesforce-component-standards skill"
+    },
+    {
+      "name": "salesforce-flow-design",
+      "source": "github-awesome-copilot",
+      "path": "skills/salesforce-flow-design",
+      "categories": [
+        "community"
+      ],
+      "description": "salesforce-flow-design skill"
+    },
+    {
+      "name": "sandbox-npm-install",
+      "source": "github-awesome-copilot",
+      "path": "skills/sandbox-npm-install",
+      "categories": [
+        "community"
+      ],
+      "description": "sandbox-npm-install skill"
+    },
+    {
+      "name": "scaffolding-oracle-to-postgres-migration-test-project",
+      "source": "github-awesome-copilot",
+      "path": "skills/scaffolding-oracle-to-postgres-migration-test-project",
+      "categories": [
+        "community"
+      ],
+      "description": "scaffolding-oracle-to-postgres-migration-test-project skill"
+    },
+    {
+      "name": "scoutqa-test",
+      "source": "github-awesome-copilot",
+      "path": "skills/scoutqa-test",
+      "categories": [
+        "community"
+      ],
+      "description": "scoutqa-test skill"
+    },
+    {
+      "name": "secret-scanning",
+      "source": "github-awesome-copilot",
+      "path": "skills/secret-scanning",
+      "categories": [
+        "community"
+      ],
+      "description": "secret-scanning skill"
+    },
+    {
+      "name": "security-review",
+      "source": "github-awesome-copilot",
+      "path": "skills/security-review",
+      "categories": [
+        "community"
+      ],
+      "description": "security-review skill"
+    },
+    {
+      "name": "semantic-kernel",
+      "source": "github-awesome-copilot",
+      "path": "skills/semantic-kernel",
+      "categories": [
+        "community"
+      ],
+      "description": "semantic-kernel skill"
+    },
+    {
+      "name": "shuffle-json-data",
+      "source": "github-awesome-copilot",
+      "path": "skills/shuffle-json-data",
+      "categories": [
+        "community"
+      ],
+      "description": "shuffle-json-data skill"
+    },
+    {
+      "name": "snowflake-semanticview",
+      "source": "github-awesome-copilot",
+      "path": "skills/snowflake-semanticview",
+      "categories": [
+        "community"
+      ],
+      "description": "snowflake-semanticview skill"
+    },
+    {
+      "name": "sponsor-finder",
+      "source": "github-awesome-copilot",
+      "path": "skills/sponsor-finder",
+      "categories": [
+        "community"
+      ],
+      "description": "sponsor-finder skill"
+    },
+    {
+      "name": "spring-boot-testing",
+      "source": "github-awesome-copilot",
+      "path": "skills/spring-boot-testing",
+      "categories": [
+        "community"
+      ],
+      "description": "spring-boot-testing skill"
+    },
+    {
+      "name": "sql-code-review",
+      "source": "github-awesome-copilot",
+      "path": "skills/sql-code-review",
+      "categories": [
+        "community"
+      ],
+      "description": "sql-code-review skill"
+    },
+    {
+      "name": "sql-optimization",
+      "source": "github-awesome-copilot",
+      "path": "skills/sql-optimization",
+      "categories": [
+        "community"
+      ],
+      "description": "sql-optimization skill"
+    },
+    {
+      "name": "structured-autonomy-generate",
+      "source": "github-awesome-copilot",
+      "path": "skills/structured-autonomy-generate",
+      "categories": [
+        "community"
+      ],
+      "description": "structured-autonomy-generate skill"
+    },
+    {
+      "name": "structured-autonomy-implement",
+      "source": "github-awesome-copilot",
+      "path": "skills/structured-autonomy-implement",
+      "categories": [
+        "community"
+      ],
+      "description": "structured-autonomy-implement skill"
+    },
+    {
+      "name": "structured-autonomy-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/structured-autonomy-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "structured-autonomy-plan skill"
+    },
+    {
+      "name": "suggest-awesome-github-copilot-agents",
+      "source": "github-awesome-copilot",
+      "path": "skills/suggest-awesome-github-copilot-agents",
+      "categories": [
+        "community"
+      ],
+      "description": "suggest-awesome-github-copilot-agents skill"
+    },
+    {
+      "name": "suggest-awesome-github-copilot-instructions",
+      "source": "github-awesome-copilot",
+      "path": "skills/suggest-awesome-github-copilot-instructions",
+      "categories": [
+        "community"
+      ],
+      "description": "suggest-awesome-github-copilot-instructions skill"
+    },
+    {
+      "name": "suggest-awesome-github-copilot-skills",
+      "source": "github-awesome-copilot",
+      "path": "skills/suggest-awesome-github-copilot-skills",
+      "categories": [
+        "community"
+      ],
+      "description": "suggest-awesome-github-copilot-skills skill"
+    },
+    {
+      "name": "swift-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/swift-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "swift-mcp-server-generator skill"
+    },
+    {
+      "name": "technology-stack-blueprint-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/technology-stack-blueprint-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "technology-stack-blueprint-generator skill"
+    },
+    {
+      "name": "terraform-azurerm-set-diff-analyzer",
+      "source": "github-awesome-copilot",
+      "path": "skills/terraform-azurerm-set-diff-analyzer",
+      "categories": [
+        "community"
+      ],
+      "description": "terraform-azurerm-set-diff-analyzer skill"
+    },
+    {
+      "name": "threat-model-analyst",
+      "source": "github-awesome-copilot",
+      "path": "skills/threat-model-analyst",
+      "categories": [
+        "community"
+      ],
+      "description": "threat-model-analyst skill"
+    },
+    {
+      "name": "tldr-prompt",
+      "source": "github-awesome-copilot",
+      "path": "skills/tldr-prompt",
+      "categories": [
+        "community"
+      ],
+      "description": "tldr-prompt skill"
+    },
+    {
+      "name": "transloadit-media-processing",
+      "source": "github-awesome-copilot",
+      "path": "skills/transloadit-media-processing",
+      "categories": [
+        "community"
+      ],
+      "description": "transloadit-media-processing skill"
+    },
+    {
+      "name": "typescript-mcp-server-generator",
+      "source": "github-awesome-copilot",
+      "path": "skills/typescript-mcp-server-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "typescript-mcp-server-generator skill"
+    },
+    {
+      "name": "typespec-api-operations",
+      "source": "github-awesome-copilot",
+      "path": "skills/typespec-api-operations",
+      "categories": [
+        "community"
+      ],
+      "description": "typespec-api-operations skill"
+    },
+    {
+      "name": "typespec-create-agent",
+      "source": "github-awesome-copilot",
+      "path": "skills/typespec-create-agent",
+      "categories": [
+        "community"
+      ],
+      "description": "typespec-create-agent skill"
+    },
+    {
+      "name": "typespec-create-api-plugin",
+      "source": "github-awesome-copilot",
+      "path": "skills/typespec-create-api-plugin",
+      "categories": [
+        "community"
+      ],
+      "description": "typespec-create-api-plugin skill"
+    },
+    {
+      "name": "unit-test-vue-pinia",
+      "source": "github-awesome-copilot",
+      "path": "skills/unit-test-vue-pinia",
+      "categories": [
+        "community"
+      ],
+      "description": "unit-test-vue-pinia skill"
+    },
+    {
+      "name": "update-avm-modules-in-bicep",
+      "source": "github-awesome-copilot",
+      "path": "skills/update-avm-modules-in-bicep",
+      "categories": [
+        "community"
+      ],
+      "description": "update-avm-modules-in-bicep skill"
+    },
+    {
+      "name": "update-implementation-plan",
+      "source": "github-awesome-copilot",
+      "path": "skills/update-implementation-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "update-implementation-plan skill"
+    },
+    {
+      "name": "update-llms",
+      "source": "github-awesome-copilot",
+      "path": "skills/update-llms",
+      "categories": [
+        "community"
+      ],
+      "description": "update-llms skill"
+    },
+    {
+      "name": "update-markdown-file-index",
+      "source": "github-awesome-copilot",
+      "path": "skills/update-markdown-file-index",
+      "categories": [
+        "community"
+      ],
+      "description": "update-markdown-file-index skill"
+    },
+    {
+      "name": "update-specification",
+      "source": "github-awesome-copilot",
+      "path": "skills/update-specification",
+      "categories": [
+        "community"
+      ],
+      "description": "update-specification skill"
+    },
+    {
+      "name": "vscode-ext-commands",
+      "source": "github-awesome-copilot",
+      "path": "skills/vscode-ext-commands",
+      "categories": [
+        "community"
+      ],
+      "description": "vscode-ext-commands skill"
+    },
+    {
+      "name": "vscode-ext-localization",
+      "source": "github-awesome-copilot",
+      "path": "skills/vscode-ext-localization",
+      "categories": [
+        "community"
+      ],
+      "description": "vscode-ext-localization skill"
+    },
+    {
+      "name": "web-coder",
+      "source": "github-awesome-copilot",
+      "path": "skills/web-coder",
+      "categories": [
+        "community"
+      ],
+      "description": "web-coder skill"
+    },
+    {
+      "name": "web-design-reviewer",
+      "source": "github-awesome-copilot",
+      "path": "skills/web-design-reviewer",
+      "categories": [
+        "community"
+      ],
+      "description": "web-design-reviewer skill"
+    },
+    {
+      "name": "what-context-needed",
+      "source": "github-awesome-copilot",
+      "path": "skills/what-context-needed",
+      "categories": [
+        "community"
+      ],
+      "description": "what-context-needed skill"
+    },
+    {
+      "name": "winapp-cli",
+      "source": "github-awesome-copilot",
+      "path": "skills/winapp-cli",
+      "categories": [
+        "community"
+      ],
+      "description": "winapp-cli skill"
+    },
+    {
+      "name": "winmd-api-search",
+      "source": "github-awesome-copilot",
+      "path": "skills/winmd-api-search",
+      "categories": [
+        "community"
+      ],
+      "description": "winmd-api-search skill"
+    },
+    {
+      "name": "winui3-migration-guide",
+      "source": "github-awesome-copilot",
+      "path": "skills/winui3-migration-guide",
+      "categories": [
+        "community"
+      ],
+      "description": "winui3-migration-guide skill"
+    },
+    {
+      "name": "workiq-copilot",
+      "source": "github-awesome-copilot",
+      "path": "skills/workiq-copilot",
+      "categories": [
+        "community"
+      ],
+      "description": "workiq-copilot skill"
+    },
+    {
+      "name": "write-coding-standards-from-file",
+      "source": "github-awesome-copilot",
+      "path": "skills/write-coding-standards-from-file",
+      "categories": [
+        "community"
+      ],
+      "description": "write-coding-standards-from-file skill"
+    },
+    {
+      "name": "connect-apps",
+      "source": "composio-awesome",
+      "path": "connect-apps",
+      "categories": [
+        "community"
+      ],
+      "description": "connect-apps skill"
+    },
+    {
+      "name": "connect",
+      "source": "composio-awesome",
+      "path": "connect",
+      "categories": [
+        "community"
+      ],
+      "description": "connect skill"
+    },
+    {
+      "name": "langsmith-fetch",
+      "source": "composio-awesome",
+      "path": "langsmith-fetch",
+      "categories": [
+        "community"
+      ],
+      "description": "langsmith-fetch skill"
+    },
+    {
+      "name": "tailored-resume-generator",
+      "source": "composio-awesome",
+      "path": "tailored-resume-generator",
+      "categories": [
+        "community"
+      ],
+      "description": "tailored-resume-generator skill"
+    },
+    {
+      "name": "twitter-algorithm-optimizer",
+      "source": "composio-awesome",
+      "path": "twitter-algorithm-optimizer",
+      "categories": [
+        "community"
+      ],
+      "description": "twitter-algorithm-optimizer skill"
+    },
+    {
+      "name": "bgpt-paper-search",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/bgpt-paper-search",
+      "categories": [
+        "community"
+      ],
+      "description": "bgpt-paper-search skill"
+    },
+    {
+      "name": "consciousness-council",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/consciousness-council",
+      "categories": [
+        "community"
+      ],
+      "description": "consciousness-council skill"
+    },
+    {
+      "name": "database-lookup",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/database-lookup",
+      "categories": [
+        "community"
+      ],
+      "description": "database-lookup skill"
+    },
+    {
+      "name": "depmap",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/depmap",
+      "categories": [
+        "community"
+      ],
+      "description": "depmap skill"
+    },
+    {
+      "name": "dhdna-profiler",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/dhdna-profiler",
+      "categories": [
+        "community"
+      ],
+      "description": "dhdna-profiler skill"
+    },
+    {
+      "name": "docx",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/docx",
+      "categories": [
+        "community"
+      ],
+      "description": "docx skill"
+    },
+    {
+      "name": "geomaster",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/geomaster",
+      "categories": [
+        "community"
+      ],
+      "description": "geomaster skill"
+    },
+    {
+      "name": "ginkgo-cloud-lab",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/ginkgo-cloud-lab",
+      "categories": [
+        "community"
+      ],
+      "description": "ginkgo-cloud-lab skill"
+    },
+    {
+      "name": "glycoengineering",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/glycoengineering",
+      "categories": [
+        "community"
+      ],
+      "description": "glycoengineering skill"
+    },
+    {
+      "name": "imaging-data-commons",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/imaging-data-commons",
+      "categories": [
+        "community"
+      ],
+      "description": "imaging-data-commons skill"
+    },
+    {
+      "name": "infographics",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/infographics",
+      "categories": [
+        "community"
+      ],
+      "description": "infographics skill"
+    },
+    {
+      "name": "markdown-mermaid-writing",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/markdown-mermaid-writing",
+      "categories": [
+        "community"
+      ],
+      "description": "markdown-mermaid-writing skill"
+    },
+    {
+      "name": "matlab",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/matlab",
+      "categories": [
+        "community"
+      ],
+      "description": "matlab skill"
+    },
+    {
+      "name": "molecular-dynamics",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/molecular-dynamics",
+      "categories": [
+        "community"
+      ],
+      "description": "molecular-dynamics skill"
+    },
+    {
+      "name": "open-notebook",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/open-notebook",
+      "categories": [
+        "community"
+      ],
+      "description": "open-notebook skill"
+    },
+    {
+      "name": "optimize-for-gpu",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/optimize-for-gpu",
+      "categories": [
+        "community"
+      ],
+      "description": "optimize-for-gpu skill"
+    },
+    {
+      "name": "paper-lookup",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/paper-lookup",
+      "categories": [
+        "community"
+      ],
+      "description": "paper-lookup skill"
+    },
+    {
+      "name": "paperzilla",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/paperzilla",
+      "categories": [
+        "community"
+      ],
+      "description": "paperzilla skill"
+    },
+    {
+      "name": "parallel-web",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/parallel-web",
+      "categories": [
+        "community"
+      ],
+      "description": "parallel-web skill"
+    },
+    {
+      "name": "pdf",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pdf",
+      "categories": [
+        "community"
+      ],
+      "description": "pdf skill"
+    },
+    {
+      "name": "phylogenetics",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/phylogenetics",
+      "categories": [
+        "community"
+      ],
+      "description": "phylogenetics skill"
+    },
+    {
+      "name": "polars-bio",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/polars-bio",
+      "categories": [
+        "community"
+      ],
+      "description": "polars-bio skill"
+    },
+    {
+      "name": "pptx",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pptx",
+      "categories": [
+        "community"
+      ],
+      "description": "pptx skill"
+    },
+    {
+      "name": "primekg",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/primekg",
+      "categories": [
+        "community"
+      ],
+      "description": "primekg skill"
+    },
+    {
+      "name": "pyzotero",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/pyzotero",
+      "categories": [
+        "community"
+      ],
+      "description": "pyzotero skill"
+    },
+    {
+      "name": "rowan",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/rowan",
+      "categories": [
+        "community"
+      ],
+      "description": "rowan skill"
+    },
+    {
+      "name": "scvelo",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/scvelo",
+      "categories": [
+        "community"
+      ],
+      "description": "scvelo skill"
+    },
+    {
+      "name": "tiledbvcf",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/tiledbvcf",
+      "categories": [
+        "community"
+      ],
+      "description": "tiledbvcf skill"
+    },
+    {
+      "name": "timesfm-forecasting",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/timesfm-forecasting",
+      "categories": [
+        "community"
+      ],
+      "description": "timesfm-forecasting skill"
+    },
+    {
+      "name": "usfiscaldata",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/usfiscaldata",
+      "categories": [
+        "community"
+      ],
+      "description": "usfiscaldata skill"
+    },
+    {
+      "name": "what-if-oracle",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/what-if-oracle",
+      "categories": [
+        "community"
+      ],
+      "description": "what-if-oracle skill"
+    },
+    {
+      "name": "xlsx",
+      "source": "claude-scientific-skills",
+      "path": "scientific-skills/xlsx",
+      "categories": [
+        "community"
+      ],
+      "description": "xlsx skill"
+    },
+    {
+      "name": "azure-advisor-report",
+      "source": "aktsmm-agent-skills",
+      "path": "azure-advisor-report",
+      "categories": [
+        "community"
+      ],
+      "description": "azure-advisor-report skill"
+    },
+    {
+      "name": "biz-ops-setup",
+      "source": "aktsmm-agent-skills",
+      "path": "biz-ops-setup",
+      "categories": [
+        "community"
+      ],
+      "description": "biz-ops-setup skill"
+    },
+    {
+      "name": "book-writing-workspace",
+      "source": "aktsmm-agent-skills",
+      "path": "book-writing-workspace",
+      "categories": [
+        "community"
+      ],
+      "description": "book-writing-workspace skill"
+    },
+    {
+      "name": "browser-max-automation",
+      "source": "aktsmm-agent-skills",
+      "path": "browser-max-automation",
+      "categories": [
+        "community"
+      ],
+      "description": "browser-max-automation skill"
+    },
+    {
+      "name": "chrome-extension-dev",
+      "source": "aktsmm-agent-skills",
+      "path": "chrome-extension-dev",
+      "categories": [
+        "community"
+      ],
+      "description": "chrome-extension-dev skill"
+    },
+    {
+      "name": "code-simplifier",
+      "source": "aktsmm-agent-skills",
+      "path": "code-simplifier",
+      "categories": [
+        "community"
+      ],
+      "description": "code-simplifier skill"
+    },
+    {
+      "name": "customer-workspace",
+      "source": "aktsmm-agent-skills",
+      "path": "customer-workspace",
+      "categories": [
+        "community"
+      ],
+      "description": "customer-workspace skill"
+    },
+    {
+      "name": "humanize-writing",
+      "source": "aktsmm-agent-skills",
+      "path": "humanize-writing",
+      "categories": [
+        "community"
+      ],
+      "description": "humanize-writing skill"
+    },
+    {
+      "name": "local-media-transcription",
+      "source": "aktsmm-agent-skills",
+      "path": "local-media-transcription",
+      "categories": [
+        "community"
+      ],
+      "description": "local-media-transcription skill"
+    },
+    {
+      "name": "ocr-super-surya",
+      "source": "aktsmm-agent-skills",
+      "path": "ocr-super-surya",
+      "categories": [
+        "community"
+      ],
+      "description": "ocr-super-surya skill"
+    },
+    {
+      "name": "packet-capture-analysis",
+      "source": "aktsmm-agent-skills",
+      "path": "packet-capture-analysis",
+      "categories": [
+        "community"
+      ],
+      "description": "packet-capture-analysis skill"
+    },
+    {
+      "name": "powerpoint-automation",
+      "source": "aktsmm-agent-skills",
+      "path": "powerpoint-automation",
+      "categories": [
+        "community"
+      ],
+      "description": "powerpoint-automation skill"
+    },
+    {
+      "name": "receipt-ocr-sorter",
+      "source": "aktsmm-agent-skills",
+      "path": "receipt-ocr-sorter",
+      "categories": [
+        "community"
+      ],
+      "description": "receipt-ocr-sorter skill"
+    },
+    {
+      "name": "skill-creator-plus",
+      "source": "aktsmm-agent-skills",
+      "path": "skill-creator-plus",
+      "categories": [
+        "community"
+      ],
+      "description": "skill-creator-plus skill"
+    },
+    {
+      "name": "vscode-extension-guide",
+      "source": "aktsmm-agent-skills",
+      "path": "vscode-extension-guide",
+      "categories": [
+        "community"
+      ],
+      "description": "vscode-extension-guide skill"
+    },
+    {
+      "name": "agenic-wallet-skills",
+      "source": "claude-command-control",
+      "path": "skills/agenic-wallet-skills",
+      "categories": [
+        "community"
+      ],
+      "description": "agenic-wallet-skills skill"
+    },
+    {
+      "name": "agent-starter",
+      "source": "claude-command-control",
+      "path": "skills/agent-starter",
+      "categories": [
+        "community"
+      ],
+      "description": "agent-starter skill"
+    },
+    {
+      "name": "algorithmic-art",
+      "source": "claude-command-control",
+      "path": "skills/algorithmic-art",
+      "categories": [
+        "community"
+      ],
+      "description": "algorithmic-art skill"
+    },
+    {
+      "name": "brand-guidelines",
+      "source": "claude-command-control",
+      "path": "skills/brand-guidelines",
+      "categories": [
+        "community"
+      ],
+      "description": "brand-guidelines skill"
+    },
+    {
+      "name": "canvas-design",
+      "source": "claude-command-control",
+      "path": "skills/canvas-design",
+      "categories": [
+        "community"
+      ],
+      "description": "canvas-design skill"
+    },
+    {
+      "name": "case-analyzer",
+      "source": "claude-command-control",
+      "path": "skills/case-analyzer",
+      "categories": [
+        "community"
+      ],
+      "description": "case-analyzer skill"
+    },
+    {
+      "name": "claude-mem-mastery",
+      "source": "claude-command-control",
+      "path": "skills/claude-mem-mastery",
+      "categories": [
+        "community"
+      ],
+      "description": "claude-mem-mastery skill"
+    },
+    {
+      "name": "doc-coauthoring",
+      "source": "claude-command-control",
+      "path": "skills/doc-coauthoring",
+      "categories": [
+        "community"
+      ],
+      "description": "doc-coauthoring skill"
+    },
+    {
+      "name": "docx",
+      "source": "claude-command-control",
+      "path": "skills/docx",
+      "categories": [
+        "community"
+      ],
+      "description": "docx skill"
+    },
+    {
+      "name": "fastmcp",
+      "source": "claude-command-control",
+      "path": "skills/fastmcp",
+      "categories": [
+        "community"
+      ],
+      "description": "fastmcp skill"
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "source": "claude-command-control",
+      "path": "skills/finishing-a-development-branch",
+      "categories": [
+        "community"
+      ],
+      "description": "finishing-a-development-branch skill"
+    },
+    {
+      "name": "frontend-design",
+      "source": "claude-command-control",
+      "path": "skills/frontend-design",
+      "categories": [
+        "community"
+      ],
+      "description": "frontend-design skill"
+    },
+    {
+      "name": "gitbook",
+      "source": "claude-command-control",
+      "path": "skills/gitbook",
+      "categories": [
+        "community"
+      ],
+      "description": "gitbook skill"
+    },
+    {
+      "name": "github-actions-reference",
+      "source": "claude-command-control",
+      "path": "skills/github-actions-reference",
+      "categories": [
+        "community"
+      ],
+      "description": "github-actions-reference skill"
+    },
+    {
+      "name": "github-pages",
+      "source": "claude-command-control",
+      "path": "skills/github-pages",
+      "categories": [
+        "community"
+      ],
+      "description": "github-pages skill"
+    },
+    {
+      "name": "gitlawb",
+      "source": "claude-command-control",
+      "path": "skills/gitlawb",
+      "categories": [
+        "community"
+      ],
+      "description": "gitlawb skill"
+    },
+    {
+      "name": "google-seo-starter-guide",
+      "source": "claude-command-control",
+      "path": "skills/google-seo-starter-guide",
+      "categories": [
+        "community"
+      ],
+      "description": "google-seo-starter-guide skill"
+    },
+    {
+      "name": "google-seo",
+      "source": "claude-command-control",
+      "path": "skills/google-seo",
+      "categories": [
+        "community"
+      ],
+      "description": "google-seo skill"
+    },
+    {
+      "name": "google-structured-data",
+      "source": "claude-command-control",
+      "path": "skills/google-structured-data",
+      "categories": [
+        "community"
+      ],
+      "description": "google-structured-data skill"
+    },
+    {
+      "name": "google-url-inspection",
+      "source": "claude-command-control",
+      "path": "skills/google-url-inspection",
+      "categories": [
+        "community"
+      ],
+      "description": "google-url-inspection skill"
+    },
+    {
+      "name": "internal-comms",
+      "source": "claude-command-control",
+      "path": "skills/internal-comms",
+      "categories": [
+        "community"
+      ],
+      "description": "internal-comms skill"
+    },
+    {
+      "name": "mcp-builder",
+      "source": "claude-command-control",
+      "path": "skills/mcp-builder",
+      "categories": [
+        "community"
+      ],
+      "description": "mcp-builder skill"
+    },
+    {
+      "name": "openserv-agents",
+      "source": "claude-command-control",
+      "path": "skills/openserv-agents",
+      "categories": [
+        "community"
+      ],
+      "description": "openserv-agents skill"
+    },
+    {
+      "name": "pdf",
+      "source": "claude-command-control",
+      "path": "skills/pdf",
+      "categories": [
+        "community"
+      ],
+      "description": "pdf skill"
+    },
+    {
+      "name": "pi-skills",
+      "source": "claude-command-control",
+      "path": "skills/pi-skills",
+      "categories": [
+        "community"
+      ],
+      "description": "pi-skills skill"
+    },
+    {
+      "name": "pptx",
+      "source": "claude-command-control",
+      "path": "skills/pptx",
+      "categories": [
+        "community"
+      ],
+      "description": "pptx skill"
+    },
+    {
+      "name": "raycast",
+      "source": "claude-command-control",
+      "path": "skills/raycast",
+      "categories": [
+        "community"
+      ],
+      "description": "raycast skill"
+    },
+    {
+      "name": "ship-faster",
+      "source": "claude-command-control",
+      "path": "skills/ship-faster",
+      "categories": [
+        "community"
+      ],
+      "description": "ship-faster skill"
+    },
+    {
+      "name": "tailwind-skill",
+      "source": "claude-command-control",
+      "path": "skills/tailwind-skill",
+      "categories": [
+        "community"
+      ],
+      "description": "tailwind-skill skill"
+    },
+    {
+      "name": "terraform-best-practices",
+      "source": "claude-command-control",
+      "path": "skills/terraform-best-practices",
+      "categories": [
+        "community"
+      ],
+      "description": "terraform-best-practices skill"
+    },
+    {
+      "name": "turbo-sdk",
+      "source": "claude-command-control",
+      "path": "skills/turbo-sdk",
+      "categories": [
+        "community"
+      ],
+      "description": "turbo-sdk skill"
+    },
+    {
+      "name": "web-artifacts-builder",
+      "source": "claude-command-control",
+      "path": "skills/web-artifacts-builder",
+      "categories": [
+        "community"
+      ],
+      "description": "web-artifacts-builder skill"
+    },
+    {
+      "name": "webapp-testing",
+      "source": "claude-command-control",
+      "path": "skills/webapp-testing",
+      "categories": [
+        "community"
+      ],
+      "description": "webapp-testing skill"
+    },
+    {
+      "name": "xlsx",
+      "source": "claude-command-control",
+      "path": "skills/xlsx",
+      "categories": [
+        "community"
+      ],
+      "description": "xlsx skill"
+    },
+    {
+      "name": "01-devops-basics",
+      "source": "claude-plugins-plus",
+      "path": "skills/01-devops-basics",
+      "categories": [
+        "community"
+      ],
+      "description": "01-devops-basics skill"
+    },
+    {
+      "name": "02-devops-advanced",
+      "source": "claude-plugins-plus",
+      "path": "skills/02-devops-advanced",
+      "categories": [
+        "community"
+      ],
+      "description": "02-devops-advanced skill"
+    },
+    {
+      "name": "03-security-fundamentals",
+      "source": "claude-plugins-plus",
+      "path": "skills/03-security-fundamentals",
+      "categories": [
+        "community"
+      ],
+      "description": "03-security-fundamentals skill"
+    },
+    {
+      "name": "04-security-advanced",
+      "source": "claude-plugins-plus",
+      "path": "skills/04-security-advanced",
+      "categories": [
+        "community"
+      ],
+      "description": "04-security-advanced skill"
+    },
+    {
+      "name": "05-frontend-dev",
+      "source": "claude-plugins-plus",
+      "path": "skills/05-frontend-dev",
+      "categories": [
+        "community"
+      ],
+      "description": "05-frontend-dev skill"
+    },
+    {
+      "name": "06-backend-dev",
+      "source": "claude-plugins-plus",
+      "path": "skills/06-backend-dev",
+      "categories": [
+        "community"
+      ],
+      "description": "06-backend-dev skill"
+    },
+    {
+      "name": "07-ml-training",
+      "source": "claude-plugins-plus",
+      "path": "skills/07-ml-training",
+      "categories": [
+        "community"
+      ],
+      "description": "07-ml-training skill"
+    },
+    {
+      "name": "08-ml-deployment",
+      "source": "claude-plugins-plus",
+      "path": "skills/08-ml-deployment",
+      "categories": [
+        "community"
+      ],
+      "description": "08-ml-deployment skill"
+    },
+    {
+      "name": "09-test-automation",
+      "source": "claude-plugins-plus",
+      "path": "skills/09-test-automation",
+      "categories": [
+        "community"
+      ],
+      "description": "09-test-automation skill"
+    },
+    {
+      "name": "10-performance-testing",
+      "source": "claude-plugins-plus",
+      "path": "skills/10-performance-testing",
+      "categories": [
+        "community"
+      ],
+      "description": "10-performance-testing skill"
+    },
+    {
+      "name": "11-data-pipelines",
+      "source": "claude-plugins-plus",
+      "path": "skills/11-data-pipelines",
+      "categories": [
+        "community"
+      ],
+      "description": "11-data-pipelines skill"
+    },
+    {
+      "name": "12-data-analytics",
+      "source": "claude-plugins-plus",
+      "path": "skills/12-data-analytics",
+      "categories": [
+        "community"
+      ],
+      "description": "12-data-analytics skill"
+    },
+    {
+      "name": "13-aws-skills",
+      "source": "claude-plugins-plus",
+      "path": "skills/13-aws-skills",
+      "categories": [
+        "community"
+      ],
+      "description": "13-aws-skills skill"
+    },
+    {
+      "name": "14-gcp-skills",
+      "source": "claude-plugins-plus",
+      "path": "skills/14-gcp-skills",
+      "categories": [
+        "community"
+      ],
+      "description": "14-gcp-skills skill"
+    },
+    {
+      "name": "15-api-development",
+      "source": "claude-plugins-plus",
+      "path": "skills/15-api-development",
+      "categories": [
+        "community"
+      ],
+      "description": "15-api-development skill"
+    },
+    {
+      "name": "16-api-integration",
+      "source": "claude-plugins-plus",
+      "path": "skills/16-api-integration",
+      "categories": [
+        "community"
+      ],
+      "description": "16-api-integration skill"
+    },
+    {
+      "name": "17-technical-docs",
+      "source": "claude-plugins-plus",
+      "path": "skills/17-technical-docs",
+      "categories": [
+        "community"
+      ],
+      "description": "17-technical-docs skill"
+    },
+    {
+      "name": "18-visual-content",
+      "source": "claude-plugins-plus",
+      "path": "skills/18-visual-content",
+      "categories": [
+        "community"
+      ],
+      "description": "18-visual-content skill"
+    },
+    {
+      "name": "19-business-automation",
+      "source": "claude-plugins-plus",
+      "path": "skills/19-business-automation",
+      "categories": [
+        "community"
+      ],
+      "description": "19-business-automation skill"
+    },
+    {
+      "name": "20-enterprise-workflows",
+      "source": "claude-plugins-plus",
+      "path": "skills/20-enterprise-workflows",
+      "categories": [
+        "community"
+      ],
+      "description": "20-enterprise-workflows skill"
+    },
+    {
+      "name": "agent-browser",
+      "source": "claude-code-harness",
+      "path": "skills/agent-browser",
+      "categories": [
+        "community"
+      ],
+      "description": "agent-browser skill"
+    },
+    {
+      "name": "breezing",
+      "source": "claude-code-harness",
+      "path": "skills/breezing",
+      "categories": [
+        "community"
+      ],
+      "description": "breezing skill"
+    },
+    {
+      "name": "cc-cursor-cc",
+      "source": "claude-code-harness",
+      "path": "skills/cc-cursor-cc",
+      "categories": [
+        "community"
+      ],
+      "description": "cc-cursor-cc skill"
+    },
+    {
+      "name": "cc-update-review",
+      "source": "claude-code-harness",
+      "path": "skills/cc-update-review",
+      "categories": [
+        "community"
+      ],
+      "description": "cc-update-review skill"
+    },
+    {
+      "name": "claude-codex-upstream-update",
+      "source": "claude-code-harness",
+      "path": "skills/claude-codex-upstream-update",
+      "categories": [
+        "community"
+      ],
+      "description": "claude-codex-upstream-update skill"
+    },
+    {
+      "name": "crud",
+      "source": "claude-code-harness",
+      "path": "skills/crud",
+      "categories": [
+        "community"
+      ],
+      "description": "crud skill"
+    },
+    {
+      "name": "generate-slide",
+      "source": "claude-code-harness",
+      "path": "skills/generate-slide",
+      "categories": [
+        "community"
+      ],
+      "description": "generate-slide skill"
+    },
+    {
+      "name": "generate-video",
+      "source": "claude-code-harness",
+      "path": "skills/generate-video",
+      "categories": [
+        "community"
+      ],
+      "description": "generate-video skill"
+    },
+    {
+      "name": "gogcli-ops",
+      "source": "claude-code-harness",
+      "path": "skills/gogcli-ops",
+      "categories": [
+        "community"
+      ],
+      "description": "gogcli-ops skill"
+    },
+    {
+      "name": "harness-loop",
+      "source": "claude-code-harness",
+      "path": "skills/harness-loop",
+      "categories": [
+        "community"
+      ],
+      "description": "harness-loop skill"
+    },
+    {
+      "name": "harness-plan",
+      "source": "claude-code-harness",
+      "path": "skills/harness-plan",
+      "categories": [
+        "community"
+      ],
+      "description": "harness-plan skill"
+    },
+    {
+      "name": "harness-release",
+      "source": "claude-code-harness",
+      "path": "skills/harness-release",
+      "categories": [
+        "community"
+      ],
+      "description": "harness-release skill"
+    },
+    {
+      "name": "harness-review",
+      "source": "claude-code-harness",
+      "path": "skills/harness-review",
+      "categories": [
+        "community"
+      ],
+      "description": "harness-review skill"
+    },
+    {
+      "name": "harness-setup",
+      "source": "claude-code-harness",
+      "path": "skills/harness-setup",
+      "categories": [
+        "community"
+      ],
+      "description": "harness-setup skill"
+    },
+    {
+      "name": "harness-sync",
+      "source": "claude-code-harness",
+      "path": "skills/harness-sync",
+      "categories": [
+        "community"
+      ],
+      "description": "harness-sync skill"
+    },
+    {
+      "name": "harness-work",
+      "source": "claude-code-harness",
+      "path": "skills/harness-work",
+      "categories": [
+        "community"
+      ],
+      "description": "harness-work skill"
+    },
+    {
+      "name": "notebookLM",
+      "source": "claude-code-harness",
+      "path": "skills/notebookLM",
+      "categories": [
+        "community"
+      ],
+      "description": "notebookLM skill"
+    },
+    {
+      "name": "session-control",
+      "source": "claude-code-harness",
+      "path": "skills/session-control",
+      "categories": [
+        "community"
+      ],
+      "description": "session-control skill"
+    },
+    {
+      "name": "session-state",
+      "source": "claude-code-harness",
+      "path": "skills/session-state",
+      "categories": [
+        "community"
+      ],
+      "description": "session-state skill"
+    },
+    {
+      "name": "session",
+      "source": "claude-code-harness",
+      "path": "skills/session",
+      "categories": [
+        "community"
+      ],
+      "description": "session skill"
+    }
+  ],
+  "categories": [
+    {
+      "id": "development",
+      "name": "開発",
+      "description": "ソフトウェア開発関連"
+    },
+    {
+      "id": "testing",
+      "name": "テスト",
+      "description": "テスト・品質保証"
+    },
+    {
+      "id": "document",
+      "name": "ドキュメント",
+      "description": "ドキュメント処理"
+    },
+    {
+      "id": "office",
+      "name": "Office",
+      "description": "Microsoft Office 関連"
+    },
+    {
+      "id": "web",
+      "name": "Web",
+      "description": "Web 開発"
+    },
+    {
+      "id": "frontend",
+      "name": "フロントエンド",
+      "description": "フロントエンド開発"
+    },
+    {
+      "id": "design",
+      "name": "デザイン",
+      "description": "デザイン・UI/UX"
+    },
+    {
+      "id": "creative",
+      "name": "クリエイティブ",
+      "description": "クリエイティブ・アート"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "description": "Git・バージョン管理"
+    },
+    {
+      "id": "planning",
+      "name": "計画",
+      "description": "プロジェクト計画"
+    },
+    {
+      "id": "agents",
+      "name": "エージェント",
+      "description": "AI エージェント関連"
+    },
+    {
+      "id": "mcp",
+      "name": "MCP",
+      "description": "Model Context Protocol"
+    },
+    {
+      "id": "business",
+      "name": "ビジネス",
+      "description": "ビジネス・業務"
+    },
+    {
+      "id": "utility",
+      "name": "ユーティリティ",
+      "description": "汎用ツール"
+    },
+    {
+      "id": "meta",
+      "name": "メタ",
+      "description": "スキル作成・管理"
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "description": "Microsoft Azure・クラウドインフラ"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Source to Skill"
+  short_description: "Distill people, books, theories, and blogs into skills."
+  default_prompt: "Use $source-to-skill to distill this person, book, theory, or blog into a skill-ready packet."

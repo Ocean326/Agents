@@ -1,0 +1,5 @@
+interface:
+  display_name: "想法澄清器"
+  short_description: "用于 AI 想法澄清、贡献收敛与首轮实验定义的全局技能"
+  brand_color: "#7A5AF8"
+  default_prompt: "使用 $research-idea-clarifier 把这个粗糙 idea 收敛成可验证研究方向。"

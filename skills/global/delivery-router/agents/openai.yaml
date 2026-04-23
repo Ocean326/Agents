@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delivery Router"
+  short_description: "交付与产品总入口，负责在 discovery、proposal、planning、delivery、verification 之间分流"
+  default_prompt: "使用 $delivery-router 判断这个需求该先做产品发现、方案生成、需求定义、批判 refinement，还是直接交给 delivery-conductor 推到交付。"

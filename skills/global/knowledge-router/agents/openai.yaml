@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Router"
+  short_description: "知识与上下文总入口，负责 brain、官方文档与 prompt 优化分流"
+  default_prompt: "使用 $knowledge-router 判断这个任务该先挂 PersonalBrain、查 OpenAI 官方文档，还是先把 prompt 优化成更稳的执行输入。"

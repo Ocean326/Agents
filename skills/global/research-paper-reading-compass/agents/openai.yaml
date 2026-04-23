@@ -1,0 +1,5 @@
+interface:
+  display_name: "论文阅读罗盘"
+  short_description: "用于 AI 论文精读、对比拆解与研究笔记整理的全局技能"
+  brand_color: "#155EEF"
+  default_prompt: "使用 $research-paper-reading-compass 读取这篇论文，并提取真正重要的 claim、设置和消融。"

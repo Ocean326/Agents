@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architect"
+  short_description: "Route architecture work to the right specialist lane"
+  default_prompt: "Use $architect to assess this architecture task and route it to the best architecture skill."

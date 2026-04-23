@@ -1,0 +1,5 @@
+interface:
+  display_name: "新颖性审计"
+  short_description: "用于新颖性压测、prior work 对撞与 reviewer 风险检查"
+  brand_color: "#7A5AF8"
+  default_prompt: "使用 $research-novelty-audit 检查这个方法到底新在哪里，以及哪里最危险。"
